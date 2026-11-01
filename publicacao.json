@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "classification": "public",
+  "familias": [
+    "arquitetonico-escuro",
+    "cartografia-de-dados",
+    "classico-noturno",
+    "conversa-calma",
+    "editorial-cinematografico",
+    "feira-impressa",
+    "fintech-acido",
+    "instrumento-denso",
+    "monumental-domestico",
+    "organic-editorial",
+    "papel-operacional",
+    "risograph-duplo",
+    "suico-contido",
+    "vitrine-silenciosa"
+  ],
+  "comportamentos": [
+    "botao-com-peso",
+    "demonstracao-viva",
+    "elevacao-no-hover",
+    "estado-vazio-com-voz",
+    "foco-visivel-forte",
+    "grade-reativa-ao-cursor",
+    "revelacao-por-scroll",
+    "skeleton-honesto",
+    "tabela-viva"
+  ],
+  "use_cases": [
+    "ecomms",
+    "presentations",
+    "professionals-website",
+    "webapps"
+  ]
+}

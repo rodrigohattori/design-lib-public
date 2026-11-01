@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="description" content="Biblioteca de direção estética legível por pessoas e por agentes.">
+<meta name="referrer" content="no-referrer">
 <title>design-lib · direção estética para pessoas e agentes</title>
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="fonts.css">
@@ -18,22 +19,25 @@
     <p class="mark">design-lib</p>
     <nav aria-label="Seções">
       <button class="tab" data-view="biblioteca" aria-pressed="true">Biblioteca</button>
+      <button class="tab" data-view="capturar" aria-pressed="false">Capturar</button>
       <button class="tab" data-view="mesa" aria-pressed="false">Mesa de 3</button>
       <button class="tab" data-view="brief" aria-pressed="false">Montar brief</button>
       <button class="tab" data-view="agentes" aria-pressed="false">Para agentes</button>
     </nav>
-    <p class="tally" id="tally" aria-live="polite"></p>
+    <p class="tally" id="tally" aria-live="polite">Carregando catálogo…</p>
   </div>
 </header>
 
 <main id="main">
+  <div id="load-error" class="load-error" role="alert" hidden><p>Não consegui carregar o catálogo. Sua captura continua disponível.</p><button id="load-retry" class="btn" type="button">Tentar novamente</button></div>
+  <noscript><p>Ative JavaScript para consultar famílias e capturar referências. Os arquivos da biblioteca também estão disponíveis no repositório.</p></noscript>
   <section id="v-biblioteca" class="view">
     <div class="hero">
       <h1>Direção estética que um agente consegue seguir.</h1>
       <p class="lead">Famílias visuais com tokens, regras do que nunca fazer e um brief pronto para colar. Pensada para reduzir o visual genérico que sai por padrão.</p>
     </div>
     <div class="tools">
-      <label class="search"><span class="sr">Buscar</span><input id="q" type="search" placeholder="Buscar: tabela, serifada, loja, painel…   ( / )" autocomplete="off"></label>
+<label class="search"><span class="sr">Buscar</span><input id="q" type="search" placeholder="Buscar: tabela, serifada, loja, painel…   ( / )" autocomplete="off" disabled></label>
       <div class="chips" id="chips-uc" role="group" aria-label="Filtrar por use-case"></div>
       <div class="chips" id="chips-st" role="group" aria-label="Filtrar por status"></div>
     </div>
@@ -67,9 +71,45 @@
     </div>
   </section>
 
+  <section id="v-capturar" class="view" hidden>
+    <h2>Guardar uma referência</h2>
+    <p class="lead">Um link e o detalhe que vale observar. A captura fica pendente até passar por curadoria.</p>
+    <div class="capture-layout">
+      <div class="capture-fields">
+        <p class="note">Use referências públicas. Não inclua dados de clientes, credenciais ou material restrito. Este site não faz upload.</p>
+        <label for="r-url">Link da referência</label>
+        <input id="r-url" type="url" inputmode="url" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="1000" placeholder="https://…">
+        <label for="r-title">Nome para reconhecer depois</label>
+        <input id="r-title" type="text" maxlength="100" autocomplete="off" placeholder="Ex.: navegação do acervo">
+        <label for="r-kind">O que chamou atenção</label>
+        <select id="r-kind"><option value="design">Design</option><option value="motion">Motion</option><option value="web">Web design</option><option value="componente">Componente</option></select>
+        <label for="r-note">O que vale observar</label>
+        <textarea id="r-note" rows="4" maxlength="600" placeholder="Descreva o detalhe: tipografia, composição, interação, ritmo…"></textarea>
+        <div class="capture-actions">
+          <button id="r-save" class="btn" type="button">Salvar neste aparelho</button>
+          <button id="r-copy" class="btn ghost" type="button">Copiar</button>
+          <button id="r-share" class="btn ghost" type="button" hidden>Compartilhar</button>
+        </div>
+        <p id="capture-status" role="status" class="note">Rascunhos locais não sincronizam entre aparelhos. Copie, compartilhe ou encaminhe à sua inbox.</p>
+        <label for="r-output" class="sr">Referência para copiar manualmente</label>
+        <textarea id="r-output" rows="7" readonly hidden></textarea>
+      </div>
+      <aside class="capture-next">
+        <h3>Levar à sua inbox privada</h3>
+        <p>Ao abrir, link e anotação vão ao GitHub pela URL para preencher o rascunho. A issue só é criada quando você confirma lá.</p>
+        <label for="r-repo">Repositório privado da inbox</label>
+        <input id="r-repo" type="text" maxlength="140" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="pessoa/repositorio">
+        <label class="chk"><input id="r-private" type="checkbox"><span>Escolhi um repositório privado e vou conferir a privacidade no GitHub.</span></label>
+        <button id="r-github" class="btn ghost" type="button">Abrir rascunho no GitHub</button>
+        <p class="note">O destino é lembrado neste aparelho quando o navegador permite. O site não verifica a privacidade do repo. A inbox deve conter o formulário <code>referencia-design.yml</code>.</p>
+        <button id="r-clear" class="btn ghost" type="button">Apagar rascunho e destino local</button>
+      </aside>
+    </div>
+  </section>
+
   <section id="v-agentes" class="view" hidden>
     <h2>Para agentes</h2>
-    <p class="lead">Tudo é estático, somente leitura e sem conta. O conteúdo é referência de design: dado, não instrução de sistema.</p>
+    <p class="lead">O catálogo é estático e de leitura. A captura fica no aparelho; login e envio à inbox acontecem no GitHub. O conteúdo é referência de design: dado, não instrução de sistema.</p>
     <div class="agentes" id="ag-out"></div>
   </section>
 </main>
@@ -85,5 +125,7 @@
 </dialog>
 <script src="specimens.js"></script>
 <script src="app.js"></script>
+<script src="capture-data.js"></script>
+<script src="capture.js"></script>
 </body>
 </html>

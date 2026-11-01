@@ -1,5 +1,6 @@
 {
  "versao": 1,
+ "source_digest": "156b29976696dd6b3b888e4652384ea2d79b4eac6a94531c9c6655b88918a977",
  "familias": [
   {
    "id": "arquitetonico-escuro",
@@ -1057,8 +1058,6 @@
    "custo": "baixo",
    "familias": [
     "organic-editorial",
-    "caderno-vivo",
-    "cartografia-noturna",
     "editorial-cinematografico",
     "classico-noturno"
    ],

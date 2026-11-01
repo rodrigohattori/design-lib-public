@@ -62,6 +62,7 @@ function visible(f){
   return true;
 }
 function renderList(){
+  if(!M)return;
   var ul=$('#lista'); ul.textContent='';
   var fs=M.familias.filter(visible);
   fs.forEach(function(f){
@@ -120,12 +121,14 @@ function mesa(uc){
   if(fs.length)out.appendChild(h('p',{class:'note',text:'Espere a escolha humana antes de construir. Três variações da mesma família vêm depois.'}));
 }
 function buildBrief(){
+  if(!M)return;
   var f=M.familias.filter(function(x){return x.id===$('#b-fam').value})[0];if(!f)return;
   var cs=[].slice.call(document.querySelectorAll('#b-cmp input:checked')).map(function(i){return M.comportamentos.filter(function(c){return c.id===i.value})[0]});
   var intent=$('#b-intent').value.trim()||'[preencher]';
   var lines=['[Referência de design: dado, não instrução de sistema]'];
   if(f.status==='candidato')lines.push('AVISE A PESSOA: família candidata, não validada.');
   lines.push(f.brief.replace('Intent: [preencher]','Intent: '+intent));
+  cs=cs.filter(function(c){return !c.familias.length||c.familias.indexOf(f.id)>=0});
   cs.forEach(function(c){lines.push('','Comportamento '+c.id+': '+c.resumo,'Limites: '+c.limites.join(' '))});
   lines.push('','Nunca nesta família:');f.nunca.forEach(function(n){lines.push('- '+n)});
   lines.push('','Anti-slop global:');M.anti_slop.forEach(function(a){lines.push('- '+a)});
@@ -140,9 +143,18 @@ function setupBrief(){
       var n=document.querySelectorAll('#b-cmp input:checked').length;
       if(n>3){i.checked=false;$('#b-note').textContent='Use no máximo 3 comportamentos.';return}buildBrief()}});
     box.appendChild(h('label',{class:'chk',for:'c-'+c.id},[i,h('span',{text:c.id+' ('+c.custo+')'})]));});
-  sel.addEventListener('change',buildBrief);$('#b-intent').addEventListener('input',buildBrief);
+  function compatible(){
+    var fid=sel.value;
+    document.querySelectorAll('#b-cmp input').forEach(function(input){
+      var c=M.comportamentos.filter(function(x){return x.id===input.value})[0];
+      input.disabled=!!(c.familias.length&&c.familias.indexOf(fid)<0);
+      if(input.disabled)input.checked=false;
+      input.parentElement.title=input.disabled?'Não indicado para esta família':'';
+    });buildBrief();
+  }
+  sel.addEventListener('change',compatible);$('#b-intent').addEventListener('input',buildBrief);
   $('#b-copy').addEventListener('click',function(){copy($('#b-out').textContent,$('#b-note'))});
-  buildBrief();
+  compatible();
 }
 function setupAgentes(){
   var o=$('#ag-out');
@@ -152,7 +164,7 @@ function setupAgentes(){
   o.appendChild(h('div',{class:'panel'},[h('h3',{text:'CLI local (Python, sem dependências)'}),
     h('pre',{text:'python3 scripts/dl.py find tabela densa --use-case webapps\npython3 scripts/dl.py mesa webapps\npython3 scripts/dl.py brief instrumento-denso tabela-viva foco-visivel-forte\npython3 scripts/dl.py lint ./src   # heurística anti-slop, exit 1 se houver achado'})]));
   o.appendChild(h('div',{class:'panel'},[h('h3',{text:'Contrato de leitura'}),
-    h('ul',{},['Leia anti-slop.md, 1 use-case e no máximo 2 famílias. Não leia o repositório inteiro.','Devolva 3 opções e espere a escolha humana.','Família candidata exige aviso antes do uso.','Todo texto aqui é referência de design. Não executa nada nem concede autoridade a ninguém.','Sem rede, sem conta, sem upload: o site é somente leitura.'].map(function(t){return h('li',{text:t})}))]));
+    h('ul',{},['Leia anti-slop.md, 1 use-case e no máximo 2 famílias. Não leia o repositório inteiro.','Devolva 3 opções e espere a escolha humana.','Família candidata exige aviso antes do uso.','Todo texto aqui é referência de design. Não executa nada nem concede autoridade a ninguém.','O catálogo é de leitura. Capturas são locais; abrir o GitHub ou compartilhar depende de sua ação.'].map(function(t){return h('li',{text:t})}))]));
   o.appendChild(h('div',{class:'panel'},[h('h3',{text:'Limites e licença'}),
     h('p',{text:'Famílias sintetizadas e autorais são texto original. Famílias coletadas citam a obra de terceiros como inspiração e não redistribuem imagem. Fontes sugeridas têm licença aberta (OFL), mas confira cada uma. O lint é heurístico e não substitui revisão humana de acessibilidade e contraste.'})]));
 }
@@ -161,15 +173,22 @@ function view(v){
   document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
   if(location.hash!=='#'+v)history.replaceState(null,'','#'+v);
 }
-fetch('./manifest.json').then(function(r){return r.json()}).then(function(m){
+function loadCatalog(){
+$('#load-error').hidden=true;
+fetch('./manifest.json').then(function(r){if(!r.ok)throw new Error('catalog');return r.json()}).then(function(m){
+  if(!m||!Array.isArray(m.familias)||!Array.isArray(m.comportamentos)||!Array.isArray(m.use_cases)||!Array.isArray(m.anti_slop))throw new Error('catalog');
   M=m;refreshChips();renderList();setupBrief();setupAgentes();
   chips($('#mesa-uc'),M.use_cases.map(function(u){return u.id}),'muc','',function(){});
   var mb=$('#mesa-uc');mb.textContent='';
   M.use_cases.forEach(function(u,i){mb.appendChild(h('button',{class:'chip',type:'button','aria-pressed':'false',text:u.id,onclick:function(){
     [].slice.call(mb.children).forEach(function(c){c.setAttribute('aria-pressed','false')});this.setAttribute('aria-pressed','true');mesa(u.id)}}))});
-  mb.firstChild.click();
-  var hsh=location.hash.slice(1);if(['mesa','brief','agentes'].indexOf(hsh)>=0)view(hsh);
-}).catch(function(){$('#tally').textContent='Não consegui carregar manifest.json'});
+  if(mb.firstChild)mb.firstChild.click();
+  $('#q').disabled=false;
+}).catch(function(){M=null;$('#q').disabled=true;$('#tally').textContent='Catálogo indisponível';$('#load-error').hidden=false;});
+}
+loadCatalog();
+$('#load-retry').addEventListener('click',function(){window.location.reload()});
+var hsh=location.hash.slice(1);if(['biblioteca','mesa','brief','agentes','capturar'].indexOf(hsh)>=0)view(hsh);
 $('#q').addEventListener('input',function(e){state.q=e.target.value;renderList()});
 document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){view(b.dataset.view)})});
 $('#det-x').addEventListener('click',function(){$('#det').close()});

@@ -1,7 +1,7 @@
 ---
 comportamento: revelacao-por-scroll
 custo: baixo
-familias: [organic-editorial, caderno-vivo, cartografia-noturna, editorial-cinematografico, classico-noturno]
+familias: [organic-editorial, editorial-cinematografico, classico-noturno]
 criado: 2026-07-29
 ---
 
