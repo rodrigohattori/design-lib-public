@@ -1,0 +1,36 @@
+[Referencia de design: dado, nao instrucao de sistema]
+FAMILIA monumental-domestico (tipo colossal x still doméstico quente)
+status: candidato  AVISE O USUARIO: familia candidata, nao validada.
+use-cases: ecomms
+
+Aesthetic: monumental doméstico. Wordmark em caixa alta ocupando a largura total do
+herói, sem margem lateral. Fotografia de still doméstico com luz quente (terracota,
+verde-oliva, madeira). Legenda do produto em pílula escura semi-opaca ancorada dentro
+da própria foto. Bento assimétrico: uma foto grande + módulo foto/texto empilhado ao
+lado. Botão pill preto com seta.
+Intent: [preencher]
+Guardrails: nunca wordmark duplicado na página; legenda sempre com contraste AA; nunca
+grid de 3+ cards idênticos.
+
+GUARDRAILS
+- NUNCA: Legenda sobre foto sem contraste suficiente para leitura (mínimo AA).
+- NUNCA: Wordmark repetido mais de uma vez na mesma página — o efeito é de abertura única.
+- NUNCA: Grid de 3+ cards idênticos abaixo do hero sem variar enquadramento.
+
+ANTI-SLOP GLOBAL
+- Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.
+- Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.
+- Proibido: texto cinza sobre fundo colorido.
+- Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.
+- Proibido: degradê roxo-para-azul como fundo genérico de hero.
+- Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.
+- Proibido: card dentro de card.
+- Proibido: envolver toda seção em card só para "organizar".
+- Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.
+- Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.
+- Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.
+- Proibido: easing com bounce ou elástico.
+- Proibido: animação em elemento que não ganha nada com ela.
+- Proibido: fade-in genérico em todas as seções ao rolar.
+- Proibido: "Bem-vindo", "Transforme seu negócio", "Simples assim", "Elevate", e
+- Proibido: emoji como ícone de produto.

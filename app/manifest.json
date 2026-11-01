@@ -1,0 +1,1191 @@
+{
+ "versao": 1,
+ "familias": [
+  {
+   "id": "arquitetonico-escuro",
+   "nome": "Arquitetônico Escuro",
+   "formula": "grotesca extendida x volume escuro",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "professionals-website",
+    "ecomms"
+   ],
+   "keywords": [
+    "grotesca extendida em caps",
+    "ardósia escura",
+    "fotografia arquitetônica noturna",
+    "numeração 01-04",
+    "tabela de dados com fio fino",
+    "planta técnica como imagem"
+   ],
+   "resumo": "Portfólio de arquiteto: tipo largo em caixa alta, volume escuro, foto noturna, dado técnico exposto.",
+   "usar": [
+    "Produto ou serviço onde especificação técnica é argumento de venda.",
+    "Existe fotografia noturna ou de produto com iluminação controlada."
+   ],
+   "nao_usar": [
+    "Conteúdo emocional ou de cuidado. O tipo extendido em caps soa institucional e frio.",
+    "Sem dado técnico real para expor. A tabela vazia denuncia."
+   ],
+   "tipografia": [],
+   "cor": [],
+   "layout": [],
+   "movimento": [],
+   "nunca": [
+    "Card dentro de card. A referência original faz isso e é o ponto fraco dela.",
+    "Grotesca extendida em texto de corpo. Só em título.",
+    "Mais de um nível de raio de canto na mesma página."
+   ],
+   "risco": "",
+   "lacuna": "",
+   "brief": "Aesthetic: arquitetônico escuro. Base ardósia escura, títulos em grotesca extendida\ncaixa alta, fotografia arquitetônica noturna, numeração 01-04 em seção de serviços,\ntabela de dados técnicos com fio fino e valores alinhados à direita, planta ou\ndiagrama técnico como imagem de conteúdo.\nIntent: [preencher]\nGuardrails: nunca card dentro de card; grotesca extendida só em título; um único raio\nde canto na página; tabela só com dado real.",
+   "tokens": {
+    "bg": "#15181b",
+    "surface": "#1d2125",
+    "ink": "#e4e6e3",
+    "muted": "#858c92",
+    "accent": "#c9d1d6",
+    "accent2": "#8aa0ad",
+    "line": "#2e343a",
+    "display": "\"Archivo\",\"Archivo Black\",system-ui,sans-serif",
+    "body": "\"Work Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",monospace",
+    "radius": 0,
+    "base": 15,
+    "mood": "dark",
+    "derived": true
+   }
+  },
+  {
+   "id": "cartografia-de-dados",
+   "nome": "Cartografia De Dados",
+   "formula": "mapa técnico x painel de estudo",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps",
+    "presentations"
+   ],
+   "keywords": [
+    "verde-mata sobre névoa",
+    "rótulos em mono pequeno",
+    "curva de nível como fundo sutil",
+    "um destaque laranja",
+    "legenda sempre visível"
+   ],
+   "resumo": "Dado tratado como território: legenda, escala e um único ponto de atenção.",
+   "usar": [
+    "Produto analítico, pesquisa, clima, logística, saúde pública.",
+    "Deck de resultados com gráfico como protagonista."
+   ],
+   "nao_usar": [
+    "Produto transacional rápido.",
+    "Marca que precisa de calor humano imediato."
+   ],
+   "tipografia": [
+    "Titular: Familjen Grotesk 600 (OFL), 20-32px.",
+    "Rótulo e eixo: Space Mono 10-11px em caixa alta com tracking.",
+    "Corpo: Familjen Grotesk 14px."
+   ],
+   "cor": [
+    "Névoa (#eef2ee), superfície (#f8faf7), tinta verde-escura (#12302b).",
+    "Verde-mata (#0b7a6b) para série principal; laranja (#d9622b) só para o ponto de atenção.",
+    "Linha de grade (#c5d1c9). Uma série em destaque, as demais em tom apagado."
+   ],
+   "layout": [
+    "Gráfico ocupa a largura toda, com legenda fixa à direita.",
+    "Rótulo direto na série em vez de legenda separada quando possível.",
+    "Um destaque por tela: o resto é neutro."
+   ],
+   "movimento": [
+    "`foco-visivel-forte`, `tabela-viva`. Transição de série em 200ms, sem bounce."
+   ],
+   "nunca": [
+    "Arco-íris categórico: no máximo 1 destaque e 3 tons de apoio.",
+    "Gráfico 3D ou pizza com mais de 4 fatias.",
+    "Eixo sem rótulo de unidade."
+   ],
+   "risco": "Verde com laranja é combinação frequente em saída de IA. A diferença está no destaque único e na legenda inline; sem esses dois, rejeitar.",
+   "lacuna": "Mapa geográfico real não coberto; usar biblioteca aberta de projeção e manter a regra de um destaque.",
+   "brief": "Aesthetic: cartografia de dados. Névoa #eef2ee, tinta #12302b, série principal verde #0b7a6b, um único ponto de atenção laranja #d9622b. Rótulos em mono pequeno, legenda inline.\nIntent: [preencher]\nGuardrails: um destaque por tela; sem arco-íris; eixos sempre com unidade; sem gráfico 3D.",
+   "tokens": {
+    "bg": "#eef2ee",
+    "surface": "#f8faf7",
+    "ink": "#12302b",
+    "muted": "#5d736c",
+    "accent": "#0b7a6b",
+    "accent2": "#d9622b",
+    "line": "#c5d1c9",
+    "display": "\"Familjen Grotesk\",\"Schibsted Grotesk\",system-ui,sans-serif",
+    "body": "\"Familjen Grotesk\",system-ui,sans-serif",
+    "mono": "\"Space Mono\",ui-monospace,monospace",
+    "radius": 2,
+    "base": 14,
+    "mood": "light"
+   }
+  },
+  {
+   "id": "classico-noturno",
+   "nome": "Clássico Noturno",
+   "formula": "mármore x ouro",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "presentations"
+   ],
+   "keywords": [
+    "escultura clássica recortada",
+    "azul quase preto",
+    "folha de ouro como único destaque",
+    "serifada com tracking largo",
+    "rótulo vertical na lateral",
+    "navegação em carrossel de bustos"
+   ],
+   "resumo": "Museu à noite: mármore recortado sobre azul profundo, um único ponto de ouro.",
+   "usar": [
+    "Tema que se beneficia de peso histórico ou filosófico.",
+    "Quando existe um objeto único que pode carregar a página inteira."
+   ],
+   "nao_usar": [
+    "Marca que precisa parecer acessível ou barata. A família comunica preço alto.",
+    "Conteúdo com muitos itens equivalentes."
+   ],
+   "tipografia": [],
+   "cor": [],
+   "layout": [],
+   "movimento": [],
+   "nunca": [
+    "Mais de um elemento em ouro visível ao mesmo tempo.",
+    "Escultura ou objeto sem recorte, colado sobre o fundo com borda retangular.",
+    "Texto de corpo longo em cima do objeto."
+   ],
+   "risco": "",
+   "lacuna": "",
+   "brief": "Aesthetic: clássico noturno. Fundo azul quase preto, escultura clássica recortada como\nobjeto central, folha de ouro em um único ponto de destaque, serifada com tracking\nlargo em caps para o título, rótulos verticais nas laterais, corpo em sans clara e\npequena.\nIntent: [preencher]\nGuardrails: um único elemento dourado visível por vez; objeto sempre recortado, nunca\nretângulo; nunca corpo de texto longo sobre a imagem.",
+   "tokens": {
+    "bg": "#16151a",
+    "surface": "#1e1d23",
+    "ink": "#ece6d8",
+    "muted": "#8b8678",
+    "accent": "#c2a15a",
+    "accent2": "#8b8678",
+    "line": "#34322f",
+    "display": "\"Cormorant Garamond\",Georgia,serif",
+    "body": "\"Work Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",monospace",
+    "radius": 0,
+    "base": 15,
+    "mood": "dark",
+    "derived": true
+   }
+  },
+  {
+   "id": "conversa-calma",
+   "nome": "Conversa Calma",
+   "formula": "assistente conversacional x papelaria suave",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps"
+   ],
+   "keywords": [
+    "verde-sálvia sobre creme",
+    "cantos de 14px",
+    "bolha de mensagem assimétrica",
+    "amarelo-mel como destaque",
+    "respiro generoso"
+   ],
+   "resumo": "Produto em que o usuário conversa: calmo, redondo, sem a estética de laboratório.",
+   "usar": [
+    "Assistente, coaching, saúde mental, educação, produto de consumo com conversa.",
+    "Primeira experiência de produto para público leigo."
+   ],
+   "nao_usar": [
+    "Ferramenta densa de operação.",
+    "Contexto de risco financeiro ou jurídico alto, que pede tom mais sóbrio."
+   ],
+   "tipografia": [
+    "Titular: Bricolage Grotesque 600 (OFL), 22-34px.",
+    "Corpo: DM Sans 16px, entrelinha 1.55.",
+    "Mono só para código e identificador."
+   ],
+   "cor": [
+    "Creme (#f6f3ec), superfície (#fffdf8), tinta (#25302a).",
+    "Sálvia (#3d6b57) para ação; mel (#e7b24a) para destaque pontual.",
+    "Bolha do usuário em sálvia; bolha do sistema em superfície com borda."
+   ],
+   "layout": [
+    "Coluna central de 680px; entrada de mensagem fixa na base.",
+    "Sugestões iniciais em lista vertical de 3, não em grade.",
+    "Estado de erro com texto humano e ação de tentar de novo."
+   ],
+   "movimento": [
+    "`botao-com-peso`, `estado-vazio-com-voz`, `skeleton-honesto`. Indicador de digitação em 3 pontos lentos, com alternativa estática em `prefers-reduced-motion`."
+   ],
+   "nunca": [
+    "Gradiente roxo-azul.",
+    "Avatar de robô com brilho.",
+    "Frase de boas-vindas genérica.",
+    "Bolha idêntica para os dois lados."
+   ],
+   "risco": "Interface de chat com cantos redondos e tom pastel é o padrão de produto de IA. O que diferencia é a voz do texto de estado e a assimetria das bolhas.",
+   "lacuna": "Sem definição de anexo, voz e histórico longo. Curar produto operando.",
+   "brief": "Aesthetic: conversa calma. Creme #f6f3ec, sálvia #3d6b57, mel #e7b24a, cantos de 14px, Bricolage Grotesque nos títulos e DM Sans 16px no corpo, coluna central de 680px.\nIntent: [preencher]\nGuardrails: sem gradiente roxo-azul; sem avatar de robô brilhante; texto de estado com voz própria; bolhas assimétricas.",
+   "tokens": {
+    "bg": "#f6f3ec",
+    "surface": "#fffdf8",
+    "ink": "#25302a",
+    "muted": "#6d776f",
+    "accent": "#3d6b57",
+    "accent2": "#e7b24a",
+    "line": "#e1dccf",
+    "display": "\"Bricolage Grotesque\",\"DM Sans\",system-ui,sans-serif",
+    "body": "\"DM Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+    "radius": 14,
+    "base": 16,
+    "mood": "light"
+   }
+  },
+  {
+   "id": "editorial-cinematografico",
+   "nome": "Editorial Cinematográfico",
+   "formula": "paisagem x numeral fantasma",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "professionals-website",
+    "presentations"
+   ],
+   "keywords": [
+    "foto de paisagem sangrada em altura total",
+    "numeral gigante translúcido atrás do título",
+    "serifada didone",
+    "acento âmbar",
+    "azul petróleo profundo",
+    "alternância lado a lado"
+   ],
+   "resumo": "Revista de expedição: a foto ocupa tudo, o texto entra depois e o número é cenário.",
+   "usar": [
+    "Existe fotografia forte de verdade. Sem imagem boa, a família não existe.",
+    "Conteúdo em capítulos numerados com ordem real."
+   ],
+   "nao_usar": [
+    "Sem banco de imagem próprio. Foto de banco genérica destrói a família.",
+    "Conteúdo denso em dados ou tabela."
+   ],
+   "tipografia": [],
+   "cor": [],
+   "layout": [],
+   "movimento": [],
+   "nunca": [
+    "Numeral fantasma em seção que não é sequência real.",
+    "Mais de um acento além do âmbar.",
+    "Foto pequena. A família só funciona em escala grande."
+   ],
+   "risco": "",
+   "lacuna": "",
+   "brief": "Aesthetic: editorial cinematográfico. Hero de foto de paisagem sangrada em altura\ntotal com título serifado centralizado, fundo azul petróleo profundo, numerais\ngigantes translúcidos atrás dos títulos de capítulo, acento âmbar apenas em eyebrow\ne link, blocos alternando foto e texto lado a lado, link \"ler mais\" com seta.\nIntent: [preencher]\nGuardrails: só usar com fotografia própria de alta qualidade; numeral fantasma apenas\nonde há sequência real; um único acento de cor.",
+   "tokens": {
+    "bg": "#101214",
+    "surface": "#181b1e",
+    "ink": "#f0ede6",
+    "muted": "#8a8c88",
+    "accent": "#e9e2d0",
+    "accent2": "#b3402c",
+    "line": "#2b2e31",
+    "display": "\"Fraunces\",Georgia,serif",
+    "body": "\"Work Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",monospace",
+    "radius": 0,
+    "base": 16,
+    "mood": "dark",
+    "derived": true
+   }
+  },
+  {
+   "id": "feira-impressa",
+   "nome": "Feira Impressa",
+   "formula": "cartaz de feira x etiqueta de preço",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "ecomms"
+   ],
+   "keywords": [
+    "amarelo-manteiga com vermelho",
+    "etiqueta de preço inclinada",
+    "grotesca expandida pesada",
+    "faixa de carimbo",
+    "preço como protagonista"
+   ],
+   "resumo": "Loja que grita com carinho: preço, etiqueta e cartaz, sem fingir sofisticação.",
+   "usar": [
+    "Alimento, bebida, utilidade, moda popular, kit e assinatura.",
+    "Marca de tom caloroso e preço acessível."
+   ],
+   "nao_usar": [
+    "Luxo ou serviço profissional.",
+    "Marca de tom clínico."
+   ],
+   "tipografia": [
+    "Titular: Archivo expandido peso 800 (OFL), caixa alta, 32-64px.",
+    "Corpo: Archivo 15px.",
+    "Preço: Archivo 800, 28-40px, tabular."
+   ],
+   "cor": [
+    "Manteiga (#f7e9c8), tinta (#1d1a16), vermelho-feira (#d7261e), verde-folha (#1b5e4b).",
+    "Vermelho só em preço e etiqueta. Verde só em confirmação."
+   ],
+   "layout": [
+    "Etiqueta de preço inclinada em -2 graus, estática.",
+    "Faixas horizontais alternando manteiga e tinta.",
+    "Botão de compra largo, com sombra dura de 3px (sem desfoque)."
+   ],
+   "movimento": [
+    "`botao-com-peso` obrigatório. `elevacao-no-hover` nos cartões."
+   ],
+   "nunca": [
+    "Sombra com desfoque.",
+    "Rotação animada.",
+    "Mais de 2 etiquetas por tela.",
+    "Vermelho em texto longo."
+   ],
+   "risco": "Vermelho e amarelo remetem a varejo barato se mal executados. A diferença está na tipografia expandida bem espaçada e na disciplina de usar vermelho só em preço.",
+   "lacuna": "Sem versão para assinatura recorrente e carrinho. Definir.",
+   "brief": "Aesthetic: feira impressa. Manteiga #f7e9c8, tinta #1d1a16, vermelho #d7261e só em preço e etiqueta. Archivo expandido 800 em caixa alta, etiqueta inclinada estática, sombra dura de 3px.\nIntent: [preencher]\nGuardrails: sem sombra com desfoque; sem rotação animada; vermelho só em preço; no máximo 2 etiquetas por tela.",
+   "tokens": {
+    "bg": "#f7e9c8",
+    "surface": "#fff6de",
+    "ink": "#1d1a16",
+    "muted": "#6f6553",
+    "accent": "#d7261e",
+    "accent2": "#1b5e4b",
+    "line": "#d9c796",
+    "display": "\"Archivo\",\"Archivo Black\",system-ui,sans-serif",
+    "body": "\"Archivo\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+    "radius": 2,
+    "base": 15,
+    "mood": "light"
+   }
+  },
+  {
+   "id": "fintech-acido",
+   "nome": "Fintech Ácido",
+   "formula": "grotesca pesada x verde ácido",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "webapps",
+    "presentations"
+   ],
+   "keywords": [
+    "grotesca condensada pesada em caps",
+    "verde ácido sobre quase preto",
+    "número real em escala grande",
+    "captura de painel como prova",
+    "alternância preto creme ácido",
+    "headline afirmativa curta"
+   ],
+   "resumo": "Painel de tesouraria gritando: caixa alta pesada, verde ácido, número real na cara.",
+   "usar": [
+    "Produto digital com número que impressiona e pode ser mostrado de verdade.",
+    "Público que valoriza objetividade e desconfia de tom institucional."
+   ],
+   "nao_usar": [
+    "Saúde e cuidado. O ácido é agressivo e o contexto pede o contrário.",
+    "Sem dado real. A família depende de número verdadeiro, senão soa vazia."
+   ],
+   "tipografia": [
+    "Titular: grotesca condensada pesada, caixa alta, no máximo 7 palavras.",
+    "Corpo: sans neutra de peso médio, 14-15px. Densidade acima de conforto.",
+    "Número em destaque: mesma grotesca, escala 3x a 5x o corpo, tabular."
+   ],
+   "cor": [
+    "Base quase preta com temperatura, nunca #000.",
+    "Ácido como único acento, em área grande no máximo em uma seção.",
+    "Creme como terceira faixa, para quebrar a sequência escura.",
+    "Proporção: escuro 65%, creme 25%, ácido 10%."
+   ],
+   "layout": [
+    "Blocos chapados, alternando preto, creme e ácido. Transição por corte, não por degradê.",
+    "Captura de painel do produto como prova em cada seção de argumento.",
+    "Indicadores numéricos em fila no topo da seção, com fio fino separando."
+   ],
+   "movimento": [
+    "`elevacao-no-hover` na grade. `botao-com-peso` no CTA.",
+    "Evitar `revelacao-por-scroll`: interface de trabalho não quer animação de entrada."
+   ],
+   "nunca": [
+    "Gradiente. A família é chapada.",
+    "Verde ácido em área grande em mais de uma seção.",
+    "Headline com mais de 7 palavras.",
+    "Número inventado ou ilustrativo sem rótulo de exemplo."
+   ],
+   "risco": "Fundo quase preto com um único acento vivo é o segundo agrupamento mais comum de output de\nIA hoje. O par de cores não diferencia nada. O que diferencia esta execução é a grotesca\ncondensada pesada em caixa alta, o dado real em escala grande e a alternância brusca entre\npreto, creme e ácido. Entrega só com o par de cores é slop com outra roupa: rejeitar.",
+   "lacuna": "A referência é landing page, então mostra a vitrine e não o produto. Para uso pleno em\n`webapps` faltam estados (vazio, carregando, erro, sem permissão), densidade de tabela e\nnavegação de mais de 2 níveis. Ao curar a próxima referência para este use-case, buscar\ncaptura do produto operando, não da página de venda.",
+   "brief": "Aesthetic: fintech ácido. Base quase preta com temperatura, verde ácido como único acento,\ntítulos em grotesca condensada pesada caixa alta com até 7 palavras, número real em escala\ngrande e tabular, captura de painel do produto como prova, seções alternando preto, creme\ne ácido em blocos chapados com transição por corte.\nIntent: [preencher]\nGuardrails: nunca gradiente; ácido em área grande no máximo em uma seção; headline com até\n7 palavras; todo número real ou rotulado como exemplo; sem revelação por scroll.",
+   "tokens": {
+    "bg": "#121310",
+    "surface": "#1a1c17",
+    "ink": "#f3efe0",
+    "muted": "#8d8f80",
+    "accent": "#c8f23a",
+    "accent2": "#f3efe0",
+    "line": "#34372d",
+    "display": "\"Archivo\",\"Archivo Black\",system-ui,sans-serif",
+    "body": "\"Work Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",monospace",
+    "radius": 0,
+    "base": 14,
+    "mood": "dark",
+    "derived": true
+   }
+  },
+  {
+   "id": "instrumento-denso",
+   "nome": "Instrumento Denso",
+   "formula": "console de operação x grafite quente",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps"
+   ],
+   "keywords": [
+    "tabela densa com números tabulares",
+    "grafite quente com âmbar",
+    "corpo 13px",
+    "barra lateral de 2 níveis",
+    "estados vazio carregando erro",
+    "atalho de teclado visível"
+   ],
+   "resumo": "Painel de quem opera o dia inteiro: denso, legível a 13px, sem enfeite que atrase o olho.",
+   "usar": [
+    "Ferramenta interna, painel de operação, back-office, ferramenta de analista.",
+    "Usuário diário que valoriza velocidade de leitura e atalho de teclado."
+   ],
+   "nao_usar": [
+    "Página de venda ou onboarding emotivo. A densidade assusta quem chega.",
+    "Público ocasional ou idoso sem treinamento."
+   ],
+   "tipografia": [
+    "Titular: grotesca neutra de peso 600, 15-18px, sem caixa alta (Schibsted Grotesk ou IBM Plex Sans, ambas OFL).",
+    "Corpo: IBM Plex Sans 13px, entrelinha 1.45.",
+    "Número: IBM Plex Mono ou fonte com `font-variant-numeric: tabular-nums`, sempre alinhado à direita em coluna."
+   ],
+   "cor": [
+    "Base grafite com temperatura quente (#1b1a18), superfície um degrau acima (#232220). Nunca #000.",
+    "Âmbar (#e8a33d) como único acento de ação. Verde-azulado (#6fb7a0) só para estado de sucesso.",
+    "Contraste de texto principal acima de 7:1; texto secundário acima de 4.5:1."
+   ],
+   "layout": [
+    "Barra lateral de 220px com até 2 níveis; breadcrumb para o terceiro.",
+    "Tabela como protagonista: cabeçalho fixo, linha de 32px, zebra só por borda inferior fina.",
+    "Estados obrigatórios por tela: vazio, carregando, erro, sem permissão, sucesso."
+   ],
+   "movimento": [
+    "`elevacao-no-hover` só em card clicável. `foco-visivel-forte` em tudo. `skeleton-honesto` no carregamento.",
+    "Nada de `revelacao-por-scroll`: ferramenta de trabalho não anima entrada."
+   ],
+   "nunca": [
+    "Gradiente decorativo.",
+    "Corpo acima de 15px em tabela.",
+    "Ícone sem rótulo em ação destrutiva.",
+    "Cor como única marca de estado (sempre ícone ou texto junto)."
+   ],
+   "risco": "Fundo escuro com acento âmbar é comum em dashboard de 2024-2026. O que diferencia aqui é a densidade real, o número tabular e o estado vazio com voz. Sem isso é só skin.",
+   "lacuna": "Não cobre formulário longo multi-passo nem edição inline de célula. Curar uma referência de produto operando antes de promover a validado.",
+   "brief": "Aesthetic: instrumento denso. Grafite quente (#1b1a18), âmbar (#e8a33d) como único acento, corpo 13px, números tabulares em mono, tabela protagonista com cabeçalho fixo.\nIntent: [preencher]\nGuardrails: sem gradiente; cor nunca é o único sinal de estado; todo estado (vazio, carregando, erro, sem permissão) desenhado; foco visível de 2px.",
+   "tokens": {
+    "bg": "#1b1a18",
+    "surface": "#232220",
+    "ink": "#ece8df",
+    "muted": "#8e887c",
+    "accent": "#e8a33d",
+    "accent2": "#6fb7a0",
+    "line": "#3a3833",
+    "display": "\"Schibsted Grotesk\",\"IBM Plex Sans\",system-ui,sans-serif",
+    "body": "\"IBM Plex Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+    "radius": 3,
+    "base": 13,
+    "mood": "dark"
+   }
+  },
+  {
+   "id": "monumental-domestico",
+   "nome": "Monumental Doméstico",
+   "formula": "tipo colossal x still doméstico quente",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "ecomms"
+   ],
+   "keywords": [
+    "wordmark tipográfico full-bleed sem margem",
+    "legenda em pílula escura sobre a foto",
+    "still doméstico com luz quente",
+    "paleta terracota e verde-oliva de produto",
+    "bento assimétrico foto grande + foto/texto empilhado",
+    "botão pill preto com seta"
+   ],
+   "resumo": "Loja de mobília onde o nome da marca ocupa a largura inteira da tela, e a legenda do produto mora dentro da própria fotografia.",
+   "usar": [
+    "Produto físico de lifestyle/casa com fotografia própria consistente e de estúdio.",
+    "Marca que quer ocupar espaço com confiança tipográfica, sem depender de ficha técnica densa."
+   ],
+   "nao_usar": [
+    "Sem fotografia de produto consistente (mesma luz, mesmo enquadramento) em toda a linha.",
+    "Produto técnico onde especificação é o argumento principal — aqui não há espaço de tabela."
+   ],
+   "tipografia": [],
+   "cor": [],
+   "layout": [],
+   "movimento": [],
+   "nunca": [
+    "Legenda sobre foto sem contraste suficiente para leitura (mínimo AA).",
+    "Wordmark repetido mais de uma vez na mesma página — o efeito é de abertura única.",
+    "Grid de 3+ cards idênticos abaixo do hero sem variar enquadramento."
+   ],
+   "risco": "",
+   "lacuna": "",
+   "brief": "Aesthetic: monumental doméstico. Wordmark em caixa alta ocupando a largura total do\nherói, sem margem lateral. Fotografia de still doméstico com luz quente (terracota,\nverde-oliva, madeira). Legenda do produto em pílula escura semi-opaca ancorada dentro\nda própria foto. Bento assimétrico: uma foto grande + módulo foto/texto empilhado ao\nlado. Botão pill preto com seta.\nIntent: [preencher]\nGuardrails: nunca wordmark duplicado na página; legenda sempre com contraste AA; nunca\ngrid de 3+ cards idênticos.",
+   "tokens": {
+    "bg": "#e8dcc8",
+    "surface": "#f1e8d6",
+    "ink": "#2a211a",
+    "muted": "#7a6c5a",
+    "accent": "#b5542b",
+    "accent2": "#6c7a52",
+    "line": "#cdbfa6",
+    "display": "\"Archivo\",\"Archivo Black\",system-ui,sans-serif",
+    "body": "\"Work Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",monospace",
+    "radius": 0,
+    "base": 16,
+    "mood": "light",
+    "derived": true
+   }
+  },
+  {
+   "id": "organic-editorial",
+   "nome": "Organic Editorial",
+   "formula": "editorial x botânico",
+   "status": "validado",
+   "autoria": "propria",
+   "use_cases": [
+    "professionals-website"
+   ],
+   "keywords": [
+    "divisória em onda orgânica",
+    "ilustração botânica a lápis",
+    "anotação manuscrita",
+    "diagrama radial como conteúdo",
+    "numeração de seção grande",
+    "faixa de citação sangrada"
+   ],
+   "resumo": "Página que se lê como caderno de campo de alguém que estuda crescimento: papel, traço à mão, diagrama antes de foto.",
+   "usar": [
+    "Profissional de saúde cuja autoridade vem de conceito e trajetória, não de serviço.",
+    "Conteúdo que precisa parecer estudado sem parecer acadêmico frio."
+   ],
+   "nao_usar": [
+    "Oferta com preço, urgência ou conversão direta. A família recusa pressão comercial.",
+    "Produto digital ou loja. Traço à mão em UI de app vira decoração falsa."
+   ],
+   "tipografia": [
+    "Titular: serifada de texto, contraste moderado, tamanho grande, peso normal.",
+    "Corpo: sans humanista, 16-17px, entrelinha 1.6.",
+    "Terceira voz: manuscrito real para anotação lateral, 1 a 2 vezes por página.",
+    "Eyebrow em caps, tracking largo, corpo pequeno, cor terrosa."
+   ],
+   "cor": [
+    "Base papel quente 70%, verdes musgo e oliva 20%, vinho 8%, ocre 2%.",
+    "Vinho aparece em palavra-chave de headline, faixa de citação e CTA."
+   ],
+   "layout": [
+    "Seções numeradas à esquerda em escala grande. A numeração é informação: percurso com ordem obrigatória.",
+    "Divisória entre seções em curva orgânica, nunca linha reta nem borda de card.",
+    "Alternância obrigatória: texto+foto, texto+ilustração, diagrama cheio, faixa sangrada. Nunca duas seções consecutivas com a mesma estrutura.",
+    "Foto com máscara de curva orgânica, nunca retângulo com raio.",
+    "Seção de percurso ou de caminhos de exploração resolvida como **rota**: linha"
+   ],
+   "movimento": [
+    "Revelação por scroll com deslocamento curto e opacidade. Nada mais.",
+    "Diagrama pode entrar em camadas e precisa ser legível parado."
+   ],
+   "nunca": [
+    "Botão pill preenchido. CTA é link tipográfico com seta.",
+    "Grade de 3 ou mais cards iguais, em qualquer seção.",
+    "Card na seção de caminhos. Ali é rota, sem exceção.",
+    "Fonte manuscrita genérica imitando caligrafia.",
+    "Terracota como acento principal."
+   ],
+   "risco": "Fica a um passo do agrupamento mais comum de output de IA: fundo creme perto de #F4F1EA, serifada de alto contraste, acento terracota. O que a salva são 4 elementos: divisória em onda, ilustração a lápis, anotação manuscrita, diagrama como conteúdo. Removendo qualquer um, desaba no padrão médio. Entrega sem os 4: rejeitar.",
+   "lacuna": "",
+   "brief": "Aesthetic: organic editorial. Papel quente, serifada de texto grande com palavra-chave\nem vinho, verdes musgo estruturais, divisórias em onda orgânica entre seções,\nilustração botânica a lápis, uma anotação manuscrita por página, diagrama de relações\ncomo conteúdo principal de seção, seções numeradas, seção de caminhos como rota em linha pontilhada com marcadores.\nIntent: [preencher]\nGuardrails: sempre alternar composição entre seções consecutivas; sempre CTA como\nlink com seta; nunca botão pill; nunca grade de cards; nunca acento terracota;\nnunca fonte handwriting genérica.",
+   "tokens": {
+    "bg": "#f3ecdc",
+    "surface": "#faf5e8",
+    "ink": "#2c2a22",
+    "muted": "#7a755f",
+    "accent": "#7a2a3a",
+    "accent2": "#5f6b3a",
+    "line": "#ddd2b6",
+    "display": "\"Newsreader\",Georgia,serif",
+    "body": "\"Source Sans 3\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",monospace",
+    "radius": 2,
+    "base": 16,
+    "mood": "light",
+    "derived": true
+   }
+  },
+  {
+   "id": "papel-operacional",
+   "nome": "Papel Operacional",
+   "formula": "ferramenta de escritório x livro-caixa",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps"
+   ],
+   "keywords": [
+    "papel quente com tinta azul",
+    "títulos serifados em ferramenta",
+    "tabela de livro-caixa",
+    "carimbo de estado",
+    "corpo 14px",
+    "anotação à margem"
+   ],
+   "resumo": "Software que parece um caderno de contas bem mantido: papel, tinta, carimbo, nada gritando.",
+   "usar": [
+    "Financeiro, jurídico, contábil, saúde administrativa, logística leve.",
+    "Usuário que lê muito e precisa confiar no número."
+   ],
+   "nao_usar": [
+    "Produto de entretenimento ou social.",
+    "Onde a marca exige aparência de tecnologia de ponta."
+   ],
+   "tipografia": [
+    "Titular: serifada de texto (Newsreader ou Source Serif 4, OFL), 20-28px, peso 500.",
+    "Corpo: Public Sans 14px, entrelinha 1.5.",
+    "Número: tabular, mesma sans, alinhado à direita; total em serifada."
+   ],
+   "cor": [
+    "Papel quente (#f4efe4), superfície (#fbf8f1), tinta azul-escura (#1f2a37) para texto.",
+    "Azul-tinta (#23428f) para ação; terracota (#b4452f) para erro e estorno.",
+    "Linhas finas cor de papel velho (#d9d1bd). Sem sombra."
+   ],
+   "layout": [
+    "Colunas de livro-caixa: data, descrição, valor, saldo. Linha de total com fio duplo.",
+    "Estado como carimbo textual (PAGO, PENDENTE), não pílula colorida.",
+    "Barra superior em vez de lateral quando a árvore tem 1 nível."
+   ],
+   "movimento": [
+    "`botao-com-peso`, `elevacao-no-hover` e `foco-visivel-forte`. Transição de 150ms."
+   ],
+   "nunca": [
+    "Sombra suave de card.",
+    "Pílula colorida como estado.",
+    "Fonte serifada no corpo da tabela.",
+    "Branco puro (#fff) como fundo."
+   ],
+   "risco": "Papel creme virou clichê de site editorial. Em webapp o que diferencia é o livro-caixa real, com saldo corrente e total em fio duplo. Sem a estrutura de livro, é estética sem função.",
+   "lacuna": "Sem gráfico definido. Gráfico deve ser em traço fino, uma cor, sem preenchimento.",
+   "brief": "Aesthetic: papel operacional. Papel quente #f4efe4, tinta #1f2a37, azul-tinta #23428f para ação, terracota #b4452f para erro. Títulos serifados, corpo Public Sans 14px, tabela em colunas de livro-caixa com total em fio duplo, estado em carimbo textual.\nIntent: [preencher]\nGuardrails: sem sombra; sem pílula colorida; sem fundo branco puro; número tabular alinhado à direita.",
+   "tokens": {
+    "bg": "#f4efe4",
+    "surface": "#fbf8f1",
+    "ink": "#1f2a37",
+    "muted": "#6b6f76",
+    "accent": "#23428f",
+    "accent2": "#b4452f",
+    "line": "#d9d1bd",
+    "display": "\"Newsreader\",\"Source Serif 4\",Georgia,serif",
+    "body": "\"Public Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+    "radius": 2,
+    "base": 14,
+    "mood": "light"
+   }
+  },
+  {
+   "id": "risograph-duplo",
+   "nome": "Risograph Duplo",
+   "formula": "impressão em duas tintas x serifada gorda",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "presentations",
+    "ecomms"
+   ],
+   "keywords": [
+    "duas tintas sobrepostas",
+    "azul e laranja fluorescente",
+    "grão de papel",
+    "serifada gorda de exibição",
+    "sobreposição multiplicada"
+   ],
+   "resumo": "Como um zine impresso em duas cores: a sobreposição cria a terceira.",
+   "usar": [
+    "Evento, comunidade, editorial, produto artesanal, deck de apresentação criativa.",
+    "Marca com personalidade autoral."
+   ],
+   "nao_usar": [
+    "Contexto institucional sóbrio.",
+    "Texto longo de leitura contínua."
+   ],
+   "tipografia": [
+    "Titular: Young Serif ou Gloock (OFL), 40-96px.",
+    "Corpo: Space Grotesk 15px.",
+    "Etiqueta: mono pequeno."
+   ],
+   "cor": [
+    "Papel (#f3ead8), azul-tinta (#2f3f9e), laranja-fluo (#ff6a3d).",
+    "A terceira cor nasce da sobreposição com `mix-blend-mode: multiply`.",
+    "Tinta preta é o azul escurecido (#1c2670), nunca #000."
+   ],
+   "layout": [
+    "Blocos sobrepostos com desalinhamento de 4-8px de registro.",
+    "Textura de grão por SVG de ruído, 4% de opacidade.",
+    "Foto em duotone das duas tintas."
+   ],
+   "movimento": [
+    "Nenhum movimento obrigatório. `elevacao-no-hover` opcional."
+   ],
+   "nunca": [
+    "Mais de 2 tintas.",
+    "Gradiente.",
+    "Grão pesado que reduza o contraste do texto.",
+    "Texto de corpo sobre as duas tintas sobrepostas."
+   ],
+   "risco": "Risograph virou tendência saturada. Só funciona com disciplina de duas tintas e registro desalinhado de verdade; efeito de filtro sobre cor livre é rejeitado.",
+   "lacuna": "Acessibilidade: laranja sobre azul falha em contraste para texto. Texto só em tinta sobre papel.",
+   "brief": "Aesthetic: risograph duplo. Papel #f3ead8, azul-tinta #2f3f9e, laranja #ff6a3d, sobreposição com multiply, serifada gorda nos títulos, Space Grotesk no corpo.\nIntent: [preencher]\nGuardrails: apenas 2 tintas; sem gradiente; texto só em tinta sobre papel; grão a 4% no máximo.",
+   "tokens": {
+    "bg": "#f3ead8",
+    "surface": "#faf3e4",
+    "ink": "#1c2670",
+    "muted": "#6b6a86",
+    "accent": "#ff6a3d",
+    "accent2": "#2f3f9e",
+    "line": "#d8ccb2",
+    "display": "\"Young Serif\",\"Gloock\",Georgia,serif",
+    "body": "\"Space Grotesk\",system-ui,sans-serif",
+    "mono": "\"Space Mono\",ui-monospace,monospace",
+    "radius": 1,
+    "base": 15,
+    "mood": "light"
+   }
+  },
+  {
+   "id": "suico-contido",
+   "nome": "Suico Contido",
+   "formula": "grade modernista x vermelho único",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "presentations",
+    "professionals-website"
+   ],
+   "keywords": [
+    "grade de 12 colunas visível",
+    "vermelho único",
+    "alinhamento à esquerda rígido",
+    "numeração de seção",
+    "fundo de papel off-white"
+   ],
+   "resumo": "Ordem antes de enfeite: grade, alinhamento e um vermelho que significa alguma coisa.",
+   "usar": [
+    "Escritório de advocacia, arquitetura, consultoria, deck de estratégia.",
+    "Conteúdo textual denso que precisa de estrutura."
+   ],
+   "nao_usar": [
+    "Marca lúdica ou afetiva.",
+    "Conteúdo sem hierarquia clara."
+   ],
+   "tipografia": [
+    "Titular: Schibsted Grotesk 700 (OFL), alinhado à esquerda, entrelinha 1.05.",
+    "Corpo: mesma família, 16px, colunas de até 62 caracteres.",
+    "Numeração em mono pequeno."
+   ],
+   "cor": [
+    "Off-white (#f5f4f0), tinta (#14151a), cinza de apoio (#6a6b70).",
+    "Vermelho (#e03a1e) para um único elemento por tela: seta, número ou link ativo."
+   ],
+   "layout": [
+    "Grade de 12 colunas; texto sempre na coluna 1-7; espaço negativo à direita.",
+    "Fio horizontal de 1px entre seções.",
+    "Imagem em proporção fixa, sempre recortada, sem cantos arredondados."
+   ],
+   "movimento": [
+    "`botao-com-peso`. Em deck, nenhum movimento."
+   ],
+   "nunca": [
+    "Centralizar texto longo.",
+    "Mais de um vermelho por tela.",
+    "Cantos arredondados.",
+    "Sombra."
+   ],
+   "risco": "Estilo suíço é o clichê de portfólio de design. Funciona quando a grade serve ao texto; se vira só estética, a família perde o motivo.",
+   "lacuna": "Sem versão para formulário e conversão. Em professionals-website combinar com estrutura de contato discreta.",
+   "brief": "Aesthetic: suíço contido. Off-white #f5f4f0, tinta #14151a, vermelho #e03a1e em um único elemento por tela. Schibsted Grotesk, grade de 12 colunas, texto na esquerda, fio de 1px entre seções.\nIntent: [preencher]\nGuardrails: sem centralizar texto longo; um vermelho por tela; sem cantos arredondados; sem sombra.",
+   "tokens": {
+    "bg": "#f5f4f0",
+    "surface": "#ffffff",
+    "ink": "#14151a",
+    "muted": "#6a6b70",
+    "accent": "#e03a1e",
+    "accent2": "#14151a",
+    "line": "#d6d4cc",
+    "display": "\"Schibsted Grotesk\",system-ui,sans-serif",
+    "body": "\"Schibsted Grotesk\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+    "radius": 0,
+    "base": 16,
+    "mood": "light"
+   }
+  },
+  {
+   "id": "vitrine-silenciosa",
+   "nome": "Vitrine Silenciosa",
+   "formula": "galeria de objeto x tipografia contida",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "ecomms"
+   ],
+   "keywords": [
+    "fundo de pedra clara",
+    "produto grande e isolado",
+    "serifada de exibição",
+    "terracota como único acento",
+    "muito respiro"
+   ],
+   "resumo": "Loja em que o produto é a obra e a interface se cala.",
+   "usar": [
+    "Objeto de design, cerâmica, mobiliário, joalheria, papelaria.",
+    "Catálogo curto com fotografia própria."
+   ],
+   "nao_usar": [
+    "Catálogo grande com filtro pesado.",
+    "Oferta baseada em desconto e urgência."
+   ],
+   "tipografia": [
+    "Titular: Instrument Serif (OFL), 40-72px, peso normal.",
+    "Corpo e preço: Work Sans 15px; preço em tabular.",
+    "Eyebrow: caixa alta 11px com tracking largo."
+   ],
+   "cor": [
+    "Pedra (#f2f0ec), tinta (#191816), cinza quente para apoio (#7a756c).",
+    "Terracota (#8a3b20) só no botão de compra e no estado selecionado.",
+    "Sem fundo branco puro."
+   ],
+   "layout": [
+    "Uma imagem por tela de produto, 70% da altura; texto em coluna estreita.",
+    "Grade de catálogo com 2 colunas, imagem sem moldura e legenda mínima.",
+    "Carrinho como painel lateral, não página."
+   ],
+   "movimento": [
+    "`elevacao-no-hover` na imagem, `botao-com-peso` na compra, `revelacao-por-scroll` leve."
+   ],
+   "nunca": [
+    "Selo de desconto ou contador regressivo.",
+    "Fundo de produto com cor saturada.",
+    "Grade de 4 colunas com cartões idênticos."
+   ],
+   "risco": "Minimalismo de loja vira genérico sem fotografia boa. Sem imagem própria e consistente, a família não existe.",
+   "lacuna": "Sem estrutura de página de carrinho e checkout. Definir antes de promover.",
+   "brief": "Aesthetic: vitrine silenciosa. Pedra #f2f0ec, tinta #191816, terracota #8a3b20 só na compra. Instrument Serif nos títulos, Work Sans no corpo, uma imagem grande por produto.\nIntent: [preencher]\nGuardrails: sem selo de desconto; sem contador regressivo; fotografia própria e consistente; sem fundo branco puro.",
+   "tokens": {
+    "bg": "#f2f0ec",
+    "surface": "#faf9f6",
+    "ink": "#191816",
+    "muted": "#7a756c",
+    "accent": "#8a3b20",
+    "accent2": "#c9a24f",
+    "line": "#dcd8d0",
+    "display": "\"Instrument Serif\",Georgia,serif",
+    "body": "\"Work Sans\",system-ui,sans-serif",
+    "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+    "radius": 0,
+    "base": 15,
+    "mood": "light"
+   }
+  }
+ ],
+ "comportamentos": [
+  {
+   "id": "botao-com-peso",
+   "nome": "Botão com peso",
+   "custo": "baixo",
+   "familias": [],
+   "resumo": "O botão responde como objeto físico leve: escurece no hover, afunda no clique, volta rápido. Vale para qualquer família, incluindo as que usam link com seta em vez de botão.",
+   "implementacao": [
+    "Hover: mudança de tinta do fundo em 6% a 10%. Sem mudança de tamanho.",
+    "Active: `scale(0.98)`, duração 100ms a 120ms.",
+    "Foco de teclado: contorno visível de 2px com deslocamento, sempre. Não negociável.",
+    "Link com seta: a seta avança 3px a 4px no hover, o texto fica parado."
+   ],
+   "nunca": [
+    "Easing com bounce, elástico ou overshoot.",
+    "Brilho deslizando pelo botão.",
+    "Botão que muda de largura ao trocar de estado, porque desloca o layout."
+   ],
+   "limites": [
+    "`prefers-reduced-motion` mantém a mudança de tinta e remove deslocamento e escala."
+   ]
+  },
+  {
+   "id": "demonstracao-viva",
+   "nome": "Demonstração viva",
+   "custo": "alto",
+   "familias": [
+    "arquitetonico-escuro"
+   ],
+   "resumo": "O bloco que apresenta um serviço não descreve o serviço, ele mostra o serviço funcionando em miniatura. Em vez de ícone e parágrafo, uma simulação curta: mensagens de agente aparecendo em sequência, nós de fluxo conectando, busca retornando trecho de documento, barras de fase preenchendo.",
+   "implementacao": [
+    "Cada demonstração é HTML e CSS, nunca vídeo nem GIF. Precisa ser leve e nítida.",
+    "Sequência curta, 3 a 5 passos, 2 a 4 segundos no total.",
+    "Roda uma vez ao entrar na viewport, via `IntersectionObserver`. Não fica em laço",
+    "Estado final legível parado. Quem chega depois do fim entende o mesmo."
+   ],
+   "nunca": [],
+   "limites": [
+    "`prefers-reduced-motion` mostra o estado final direto, sem sequência.",
+    "Nenhum dado inventado que pareça real. Número em demonstração é rotulado como exemplo."
+   ]
+  },
+  {
+   "id": "elevacao-no-hover",
+   "nome": "Elevação no hover",
+   "custo": "baixo",
+   "familias": [
+    "arquitetonico-escuro",
+    "editorial-cinematografico",
+    "classico-noturno"
+   ],
+   "resumo": "Card e bloco clicável sobem de 2px a 4px e ganham contraste de borda. Nada além disso.",
+   "implementacao": [
+    "`transform: translateY(-3px)` e mudança de `border-color`.",
+    "`transition` de 150ms a 200ms, `ease-out`. Nunca `ease-in-out` longo.",
+    "Elemento clicável inteiro é o alvo, não só o título."
+   ],
+   "nunca": [
+    "Sombra que cresce ou desfoca no hover.",
+    "`scale` maior que 1. Card que cresce empurra o layout e parece brinquedo.",
+    "Rotação, inclinação ou efeito 3D de qualquer tipo.",
+    "Hover em elemento que não é clicável."
+   ],
+   "limites": [
+    "Só em ponteiro fino. Em toque, o estado `:active` substitui.",
+    "`prefers-reduced-motion` mantém a mudança de borda e remove o deslocamento."
+   ]
+  },
+  {
+   "id": "estado-vazio-com-voz",
+   "nome": "Estado vazio com voz",
+   "custo": "baixo",
+   "familias": [
+    "instrumento-denso",
+    "conversa-calma",
+    "papel-operacional"
+   ],
+   "resumo": "Tela vazia explica o que vai aparecer ali, por que está vazia e qual é a próxima ação, com texto que só serviria a este produto.",
+   "implementacao": [
+    "Uma frase que diz o que preenche a tela e uma ação primária.",
+    "Opcional: exemplo real colapsado, rotulado como exemplo.",
+    "Separar vazio por falta de dado, vazio por filtro e vazio por permissão: três textos diferentes."
+   ],
+   "nunca": [
+    "Ilustração genérica de pessoa com lupa.",
+    "Mais de uma ação primária.",
+    "Texto que serviria a outro produto."
+   ],
+   "limites": [
+    "Sem movimento. Nada a declarar para `prefers-reduced-motion` nem toque."
+   ]
+  },
+  {
+   "id": "foco-visivel-forte",
+   "nome": "Foco visivel forte",
+   "custo": "baixo",
+   "familias": [],
+   "resumo": "Anel de foco de 2px com offset de 2px em toda peça interativa, com contraste mínimo de 3:1 contra o fundo.",
+   "implementacao": [
+    "`:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }`.",
+    "Cor do anel escolhida por contraste contra o fundo da família, não copiada do acento.",
+    "Ordem de tabulação igual à ordem visual."
+   ],
+   "nunca": [
+    "`outline: none` sem substituto.",
+    "Foco que só muda a cor do texto.",
+    "Anel cortado por `overflow: hidden`."
+   ],
+   "limites": [
+    "Sem animação no foco. Em toque, o anel só aparece com teclado externo."
+   ]
+  },
+  {
+   "id": "grade-reativa-ao-cursor",
+   "nome": "Grade reativa ao cursor",
+   "custo": "medio",
+   "familias": [
+    "arquitetonico-escuro",
+    "classico-noturno"
+   ],
+   "resumo": "Grade técnica de fundo, quase invisível, que ilumina em um raio curto atrás do cursor. O fundo deixa de ser papel de parede e passa a responder à presença da pessoa.",
+   "implementacao": [
+    "Grade em `repeating-linear-gradient` nos dois eixos, opacidade baixa (2% a 5%).",
+    "Segunda camada idêntica, mais brilhante, com `mask-image: radial-gradient` centrada em",
+    "`pointermove` atualiza as variáveis dentro de `requestAnimationFrame`. Nunca atualize",
+    "Raio entre 180px e 280px. Acima disso vira mancha, abaixo vira lanterna."
+   ],
+   "nunca": [],
+   "limites": [
+    "Só em ponteiro fino. Em toque, a camada de brilho não existe.",
+    "`prefers-reduced-motion: reduce` desliga a camada, e a grade estática permanece.",
+    "Zero impacto no conteúdo: a grade nunca reduz contraste de texto."
+   ]
+  },
+  {
+   "id": "revelacao-por-scroll",
+   "nome": "Revelação por scroll",
+   "custo": "baixo",
+   "familias": [
+    "organic-editorial",
+    "caderno-vivo",
+    "cartografia-noturna",
+    "editorial-cinematografico",
+    "classico-noturno"
+   ],
+   "resumo": "Bloco entra com deslocamento curto e opacidade, uma vez. É o comportamento mais banal que existe, e por isso mesmo o mais fácil de fazer parecer genérico.",
+   "implementacao": [
+    "`IntersectionObserver` com threshold em torno de 0.15, desconectando após disparar.",
+    "Estado inicial nunca esconde conteúdo de quem tem JavaScript desligado. Sem JS, tudo"
+   ],
+   "nunca": [
+    "Revelar em toda seção da página. Escolha 3 ou 4 momentos.",
+    "Revelar o hero. O hero já está visível quando a página abre.",
+    "Combinar com parallax na mesma seção."
+   ],
+   "limites": [
+    "`prefers-reduced-motion` entrega tudo visível, sem transição."
+   ]
+  },
+  {
+   "id": "skeleton-honesto",
+   "nome": "Skeleton honesto",
+   "custo": "baixo",
+   "familias": [
+    "instrumento-denso",
+    "conversa-calma"
+   ],
+   "resumo": "Carregamento mostra a forma real do conteúdo que vem, sem brilho que finge progresso.",
+   "implementacao": [
+    "Mesmas alturas, larguras e número de linhas do conteúdo final.",
+    "Pulso de opacidade de 1.2s entre 0.55 e 1, sem varredura de brilho.",
+    "Depois de 8s, trocar por mensagem de atraso com ação de tentar de novo."
+   ],
+   "nunca": [
+    "Shimmer em gradiente atravessando a tela.",
+    "Esqueleto de tamanho diferente do conteúdo final.",
+    "Spinner infinito sem texto."
+   ],
+   "limites": [
+    "`prefers-reduced-motion`: opacidade fixa em 0.7, sem pulso. Toque: igual."
+   ]
+  },
+  {
+   "id": "tabela-viva",
+   "nome": "Tabela viva",
+   "custo": "médio",
+   "familias": [
+    "instrumento-denso",
+    "papel-operacional",
+    "cartografia-de-dados"
+   ],
+   "resumo": "Tabela com cabeçalho fixo, ordenação por clique, filtro por texto e navegação por setas.",
+   "implementacao": [
+    "Cabeçalho `position: sticky`; `aria-sort` na coluna ordenada.",
+    "Linha ativa com `aria-selected`; setas sobem e descem; Enter abre.",
+    "Número com `font-variant-numeric: tabular-nums` e alinhado à direita."
+   ],
+   "nunca": [
+    "Zebra de cor forte.",
+    "Rolagem horizontal sem coluna fixa.",
+    "Ordenação sem indicador de direção."
+   ],
+   "limites": [
+    "Sem animação além de 120ms na linha ativa. `prefers-reduced-motion`: troca instantânea. Toque: linha vira cartão empilhado abaixo de 640px."
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "id": "ecomms",
+   "resumo": "Loja de produto físico, principalmente Shopify.",
+   "familias": [
+    "arquitetonico-escuro",
+    "monumental-domestico",
+    "vitrine-silenciosa",
+    "feira-impressa",
+    "risograph-duplo"
+   ]
+  },
+  {
+   "id": "presentations",
+   "resumo": "Deck, proposta comercial, material de parceiro, apresentação de palco.",
+   "familias": [
+    "classico-noturno",
+    "editorial-cinematografico",
+    "fintech-acido",
+    "cartografia-de-dados",
+    "suico-contido",
+    "risograph-duplo"
+   ]
+  },
+  {
+   "id": "professionals-website",
+   "resumo": "Site de profissional liberal cuja autoridade vem de método, conceito e trajetória:\ndentista, médico, terapeuta, advogado, arquiteto.",
+   "familias": [
+    "organic-editorial",
+    "arquitetonico-escuro",
+    "editorial-cinematografico",
+    "suico-contido"
+   ]
+  },
+  {
+   "id": "webapps",
+   "resumo": "Produto digital, aplicativo, ferramenta interna, painel.",
+   "familias": [
+    "fintech-acido",
+    "instrumento-denso",
+    "papel-operacional",
+    "cartografia-de-dados",
+    "conversa-calma"
+   ]
+  }
+ ],
+ "anti_slop": [
+  "Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.",
+  "Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.",
+  "Proibido: texto cinza sobre fundo colorido.",
+  "Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.",
+  "Proibido: degradê roxo-para-azul como fundo genérico de hero.",
+  "Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.",
+  "Proibido: card dentro de card.",
+  "Proibido: envolver toda seção em card só para \"organizar\".",
+  "Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.",
+  "Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.",
+  "Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.",
+  "Proibido: easing com bounce ou elástico.",
+  "Proibido: animação em elemento que não ganha nada com ela.",
+  "Proibido: fade-in genérico em todas as seções ao rolar.",
+  "Proibido: \"Bem-vindo\", \"Transforme seu negócio\", \"Simples assim\", \"Elevate\", e",
+  "Proibido: emoji como ícone de produto."
+ ]
+}

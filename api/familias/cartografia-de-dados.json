@@ -1,0 +1,68 @@
+{
+ "id": "cartografia-de-dados",
+ "nome": "Cartografia De Dados",
+ "formula": "mapa técnico x painel de estudo",
+ "status": "candidato",
+ "autoria": "sintetizada",
+ "use_cases": [
+  "webapps",
+  "presentations"
+ ],
+ "keywords": [
+  "verde-mata sobre névoa",
+  "rótulos em mono pequeno",
+  "curva de nível como fundo sutil",
+  "um destaque laranja",
+  "legenda sempre visível"
+ ],
+ "resumo": "Dado tratado como território: legenda, escala e um único ponto de atenção.",
+ "usar": [
+  "Produto analítico, pesquisa, clima, logística, saúde pública.",
+  "Deck de resultados com gráfico como protagonista."
+ ],
+ "nao_usar": [
+  "Produto transacional rápido.",
+  "Marca que precisa de calor humano imediato."
+ ],
+ "tipografia": [
+  "Titular: Familjen Grotesk 600 (OFL), 20-32px.",
+  "Rótulo e eixo: Space Mono 10-11px em caixa alta com tracking.",
+  "Corpo: Familjen Grotesk 14px."
+ ],
+ "cor": [
+  "Névoa (#eef2ee), superfície (#f8faf7), tinta verde-escura (#12302b).",
+  "Verde-mata (#0b7a6b) para série principal; laranja (#d9622b) só para o ponto de atenção.",
+  "Linha de grade (#c5d1c9). Uma série em destaque, as demais em tom apagado."
+ ],
+ "layout": [
+  "Gráfico ocupa a largura toda, com legenda fixa à direita.",
+  "Rótulo direto na série em vez de legenda separada quando possível.",
+  "Um destaque por tela: o resto é neutro."
+ ],
+ "movimento": [
+  "`foco-visivel-forte`, `tabela-viva`. Transição de série em 200ms, sem bounce."
+ ],
+ "nunca": [
+  "Arco-íris categórico: no máximo 1 destaque e 3 tons de apoio.",
+  "Gráfico 3D ou pizza com mais de 4 fatias.",
+  "Eixo sem rótulo de unidade."
+ ],
+ "risco": "Verde com laranja é combinação frequente em saída de IA. A diferença está no destaque único e na legenda inline; sem esses dois, rejeitar.",
+ "lacuna": "Mapa geográfico real não coberto; usar biblioteca aberta de projeção e manter a regra de um destaque.",
+ "brief": "Aesthetic: cartografia de dados. Névoa #eef2ee, tinta #12302b, série principal verde #0b7a6b, um único ponto de atenção laranja #d9622b. Rótulos em mono pequeno, legenda inline.\nIntent: [preencher]\nGuardrails: um destaque por tela; sem arco-íris; eixos sempre com unidade; sem gráfico 3D.",
+ "tokens": {
+  "bg": "#eef2ee",
+  "surface": "#f8faf7",
+  "ink": "#12302b",
+  "muted": "#5d736c",
+  "accent": "#0b7a6b",
+  "accent2": "#d9622b",
+  "line": "#c5d1c9",
+  "display": "\"Familjen Grotesk\",\"Schibsted Grotesk\",system-ui,sans-serif",
+  "body": "\"Familjen Grotesk\",system-ui,sans-serif",
+  "mono": "\"Space Mono\",ui-monospace,monospace",
+  "radius": 2,
+  "base": 14,
+  "mood": "light"
+ }
+}

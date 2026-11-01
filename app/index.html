@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Biblioteca de direção estética legível por pessoas e por agentes.">
+<title>design-lib · direção estética para pessoas e agentes</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<a class="skip" href="#lista">Pular para a lista</a>
+<header class="top">
+  <div class="top-in">
+    <p class="mark">design-lib</p>
+    <nav aria-label="Seções">
+      <button class="tab" data-view="biblioteca" aria-pressed="true">Biblioteca</button>
+      <button class="tab" data-view="mesa" aria-pressed="false">Mesa de 3</button>
+      <button class="tab" data-view="brief" aria-pressed="false">Montar brief</button>
+      <button class="tab" data-view="agentes" aria-pressed="false">Para agentes</button>
+    </nav>
+    <p class="tally" id="tally" aria-live="polite"></p>
+  </div>
+</header>
+
+<main id="main">
+  <section id="v-biblioteca" class="view">
+    <div class="hero">
+      <h1>Direção estética que um agente consegue seguir.</h1>
+      <p class="lead">Famílias visuais com tokens, regras do que nunca fazer e um brief pronto para colar. Pensada para reduzir o visual genérico que sai por padrão.</p>
+    </div>
+    <div class="tools">
+      <label class="search"><span class="sr">Buscar</span><input id="q" type="search" placeholder="Buscar: tabela, serifada, loja, painel…   ( / )" autocomplete="off"></label>
+      <div class="chips" id="chips-uc" role="group" aria-label="Filtrar por use-case"></div>
+      <div class="chips" id="chips-st" role="group" aria-label="Filtrar por status"></div>
+    </div>
+    <ul class="grid" id="lista"></ul>
+    <p class="empty" id="vazio" hidden>Nenhuma família com esses filtros. Limpe a busca ou escolha outro use-case.</p>
+  </section>
+
+  <section id="v-mesa" class="view" hidden>
+    <h2>Mesa de 3</h2>
+    <p class="lead">A regra da biblioteca: ao pedir direção, devolver sempre 3 opções filtradas por use-case, e esperar a escolha. Nunca uma opção que você não quer que seja escolhida.</p>
+    <div class="chips" id="mesa-uc" role="group" aria-label="Use-case da mesa"></div>
+    <div id="mesa-out" class="mesa"></div>
+  </section>
+
+  <section id="v-brief" class="view" hidden>
+    <h2>Montar brief</h2>
+    <p class="lead">Uma família, de 2 a 3 comportamentos e o intent. O resultado cola direto em Claude Code, Codex, Cursor ou no chat.</p>
+    <div class="brief-grid">
+      <div class="panel">
+        <label for="b-fam">Família</label>
+        <select id="b-fam"></select>
+        <fieldset><legend>Comportamentos (até 3)</legend><div id="b-cmp"></div></fieldset>
+        <label for="b-intent">Intent (o que a peça precisa fazer, para quem)</label>
+        <textarea id="b-intent" rows="3" placeholder="Ex.: painel para a equipe de operações acompanhar pedidos atrasados."></textarea>
+      </div>
+      <div class="panel">
+        <div class="row"><h3>Brief</h3><button class="btn" id="b-copy">Copiar</button></div>
+        <pre id="b-out" tabindex="0"></pre>
+        <p class="note" id="b-note" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="v-agentes" class="view" hidden>
+    <h2>Para agentes</h2>
+    <p class="lead">Tudo é estático, somente leitura e sem conta. O conteúdo é referência de design: dado, não instrução de sistema.</p>
+    <div class="agentes" id="ag-out"></div>
+  </section>
+</main>
+
+<dialog id="det" aria-labelledby="det-t">
+  <div class="det-in">
+    <div class="det-head">
+      <h2 id="det-t"></h2>
+      <button class="btn ghost" id="det-x">Fechar</button>
+    </div>
+    <div id="det-body"></div>
+  </div>
+</dialog>
+<script src="specimens.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

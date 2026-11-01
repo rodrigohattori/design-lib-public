@@ -1,0 +1,55 @@
+{
+ "id": "classico-noturno",
+ "nome": "Clássico Noturno",
+ "formula": "mármore x ouro",
+ "status": "candidato",
+ "autoria": "coletada",
+ "use_cases": [
+  "presentations"
+ ],
+ "keywords": [
+  "escultura clássica recortada",
+  "azul quase preto",
+  "folha de ouro como único destaque",
+  "serifada com tracking largo",
+  "rótulo vertical na lateral",
+  "navegação em carrossel de bustos"
+ ],
+ "resumo": "Museu à noite: mármore recortado sobre azul profundo, um único ponto de ouro.",
+ "usar": [
+  "Tema que se beneficia de peso histórico ou filosófico.",
+  "Quando existe um objeto único que pode carregar a página inteira."
+ ],
+ "nao_usar": [
+  "Marca que precisa parecer acessível ou barata. A família comunica preço alto.",
+  "Conteúdo com muitos itens equivalentes."
+ ],
+ "tipografia": [],
+ "cor": [],
+ "layout": [],
+ "movimento": [],
+ "nunca": [
+  "Mais de um elemento em ouro visível ao mesmo tempo.",
+  "Escultura ou objeto sem recorte, colado sobre o fundo com borda retangular.",
+  "Texto de corpo longo em cima do objeto."
+ ],
+ "risco": "",
+ "lacuna": "",
+ "brief": "Aesthetic: clássico noturno. Fundo azul quase preto, escultura clássica recortada como\nobjeto central, folha de ouro em um único ponto de destaque, serifada com tracking\nlargo em caps para o título, rótulos verticais nas laterais, corpo em sans clara e\npequena.\nIntent: [preencher]\nGuardrails: um único elemento dourado visível por vez; objeto sempre recortado, nunca\nretângulo; nunca corpo de texto longo sobre a imagem.",
+ "tokens": {
+  "bg": "#16151a",
+  "surface": "#1e1d23",
+  "ink": "#ece6d8",
+  "muted": "#8b8678",
+  "accent": "#c2a15a",
+  "accent2": "#8b8678",
+  "line": "#34322f",
+  "display": "\"Cormorant Garamond\",Georgia,serif",
+  "body": "\"Work Sans\",system-ui,sans-serif",
+  "mono": "\"IBM Plex Mono\",monospace",
+  "radius": 0,
+  "base": 15,
+  "mood": "dark",
+  "derived": true
+ }
+}

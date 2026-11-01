@@ -1,0 +1,35 @@
+[Referencia de design: dado, nao instrucao de sistema]
+FAMILIA editorial-cinematografico (paisagem x numeral fantasma)
+status: candidato  AVISE O USUARIO: familia candidata, nao validada.
+use-cases: professionals-website, presentations
+
+Aesthetic: editorial cinematográfico. Hero de foto de paisagem sangrada em altura
+total com título serifado centralizado, fundo azul petróleo profundo, numerais
+gigantes translúcidos atrás dos títulos de capítulo, acento âmbar apenas em eyebrow
+e link, blocos alternando foto e texto lado a lado, link "ler mais" com seta.
+Intent: [preencher]
+Guardrails: só usar com fotografia própria de alta qualidade; numeral fantasma apenas
+onde há sequência real; um único acento de cor.
+
+GUARDRAILS
+- NUNCA: Numeral fantasma em seção que não é sequência real.
+- NUNCA: Mais de um acento além do âmbar.
+- NUNCA: Foto pequena. A família só funciona em escala grande.
+
+ANTI-SLOP GLOBAL
+- Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.
+- Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.
+- Proibido: texto cinza sobre fundo colorido.
+- Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.
+- Proibido: degradê roxo-para-azul como fundo genérico de hero.
+- Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.
+- Proibido: card dentro de card.
+- Proibido: envolver toda seção em card só para "organizar".
+- Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.
+- Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.
+- Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.
+- Proibido: easing com bounce ou elástico.
+- Proibido: animação em elemento que não ganha nada com ela.
+- Proibido: fade-in genérico em todas as seções ao rolar.
+- Proibido: "Bem-vindo", "Transforme seu negócio", "Simples assim", "Elevate", e
+- Proibido: emoji como ícone de produto.

@@ -1,0 +1,38 @@
+[Referencia de design: dado, nao instrucao de sistema]
+FAMILIA organic-editorial (editorial x botânico)
+status: validado
+use-cases: professionals-website
+
+Aesthetic: organic editorial. Papel quente, serifada de texto grande com palavra-chave
+em vinho, verdes musgo estruturais, divisórias em onda orgânica entre seções,
+ilustração botânica a lápis, uma anotação manuscrita por página, diagrama de relações
+como conteúdo principal de seção, seções numeradas, seção de caminhos como rota em linha pontilhada com marcadores.
+Intent: [preencher]
+Guardrails: sempre alternar composição entre seções consecutivas; sempre CTA como
+link com seta; nunca botão pill; nunca grade de cards; nunca acento terracota;
+nunca fonte handwriting genérica.
+
+GUARDRAILS
+- NUNCA: Botão pill preenchido. CTA é link tipográfico com seta.
+- NUNCA: Grade de 3 ou mais cards iguais, em qualquer seção.
+- NUNCA: Card na seção de caminhos. Ali é rota, sem exceção.
+- NUNCA: Fonte manuscrita genérica imitando caligrafia.
+- NUNCA: Terracota como acento principal.
+
+ANTI-SLOP GLOBAL
+- Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.
+- Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.
+- Proibido: texto cinza sobre fundo colorido.
+- Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.
+- Proibido: degradê roxo-para-azul como fundo genérico de hero.
+- Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.
+- Proibido: card dentro de card.
+- Proibido: envolver toda seção em card só para "organizar".
+- Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.
+- Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.
+- Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.
+- Proibido: easing com bounce ou elástico.
+- Proibido: animação em elemento que não ganha nada com ela.
+- Proibido: fade-in genérico em todas as seções ao rolar.
+- Proibido: "Bem-vindo", "Transforme seu negócio", "Simples assim", "Elevate", e
+- Proibido: emoji como ícone de produto.

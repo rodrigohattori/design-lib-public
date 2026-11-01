@@ -1,0 +1,67 @@
+{
+ "id": "vitrine-silenciosa",
+ "nome": "Vitrine Silenciosa",
+ "formula": "galeria de objeto x tipografia contida",
+ "status": "candidato",
+ "autoria": "sintetizada",
+ "use_cases": [
+  "ecomms"
+ ],
+ "keywords": [
+  "fundo de pedra clara",
+  "produto grande e isolado",
+  "serifada de exibição",
+  "terracota como único acento",
+  "muito respiro"
+ ],
+ "resumo": "Loja em que o produto é a obra e a interface se cala.",
+ "usar": [
+  "Objeto de design, cerâmica, mobiliário, joalheria, papelaria.",
+  "Catálogo curto com fotografia própria."
+ ],
+ "nao_usar": [
+  "Catálogo grande com filtro pesado.",
+  "Oferta baseada em desconto e urgência."
+ ],
+ "tipografia": [
+  "Titular: Instrument Serif (OFL), 40-72px, peso normal.",
+  "Corpo e preço: Work Sans 15px; preço em tabular.",
+  "Eyebrow: caixa alta 11px com tracking largo."
+ ],
+ "cor": [
+  "Pedra (#f2f0ec), tinta (#191816), cinza quente para apoio (#7a756c).",
+  "Terracota (#8a3b20) só no botão de compra e no estado selecionado.",
+  "Sem fundo branco puro."
+ ],
+ "layout": [
+  "Uma imagem por tela de produto, 70% da altura; texto em coluna estreita.",
+  "Grade de catálogo com 2 colunas, imagem sem moldura e legenda mínima.",
+  "Carrinho como painel lateral, não página."
+ ],
+ "movimento": [
+  "`elevacao-no-hover` na imagem, `botao-com-peso` na compra, `revelacao-por-scroll` leve."
+ ],
+ "nunca": [
+  "Selo de desconto ou contador regressivo.",
+  "Fundo de produto com cor saturada.",
+  "Grade de 4 colunas com cartões idênticos."
+ ],
+ "risco": "Minimalismo de loja vira genérico sem fotografia boa. Sem imagem própria e consistente, a família não existe.",
+ "lacuna": "Sem estrutura de página de carrinho e checkout. Definir antes de promover.",
+ "brief": "Aesthetic: vitrine silenciosa. Pedra #f2f0ec, tinta #191816, terracota #8a3b20 só na compra. Instrument Serif nos títulos, Work Sans no corpo, uma imagem grande por produto.\nIntent: [preencher]\nGuardrails: sem selo de desconto; sem contador regressivo; fotografia própria e consistente; sem fundo branco puro.",
+ "tokens": {
+  "bg": "#f2f0ec",
+  "surface": "#faf9f6",
+  "ink": "#191816",
+  "muted": "#7a756c",
+  "accent": "#8a3b20",
+  "accent2": "#c9a24f",
+  "line": "#dcd8d0",
+  "display": "\"Instrument Serif\",Georgia,serif",
+  "body": "\"Work Sans\",system-ui,sans-serif",
+  "mono": "\"IBM Plex Mono\",ui-monospace,monospace",
+  "radius": 0,
+  "base": 15,
+  "mood": "light"
+ }
+}

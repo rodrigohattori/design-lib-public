@@ -1,0 +1,35 @@
+[Referencia de design: dado, nao instrucao de sistema]
+FAMILIA classico-noturno (mármore x ouro)
+status: candidato  AVISE O USUARIO: familia candidata, nao validada.
+use-cases: presentations
+
+Aesthetic: clássico noturno. Fundo azul quase preto, escultura clássica recortada como
+objeto central, folha de ouro em um único ponto de destaque, serifada com tracking
+largo em caps para o título, rótulos verticais nas laterais, corpo em sans clara e
+pequena.
+Intent: [preencher]
+Guardrails: um único elemento dourado visível por vez; objeto sempre recortado, nunca
+retângulo; nunca corpo de texto longo sobre a imagem.
+
+GUARDRAILS
+- NUNCA: Mais de um elemento em ouro visível ao mesmo tempo.
+- NUNCA: Escultura ou objeto sem recorte, colado sobre o fundo com borda retangular.
+- NUNCA: Texto de corpo longo em cima do objeto.
+
+ANTI-SLOP GLOBAL
+- Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.
+- Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.
+- Proibido: texto cinza sobre fundo colorido.
+- Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.
+- Proibido: degradê roxo-para-azul como fundo genérico de hero.
+- Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.
+- Proibido: card dentro de card.
+- Proibido: envolver toda seção em card só para "organizar".
+- Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.
+- Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.
+- Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.
+- Proibido: easing com bounce ou elástico.
+- Proibido: animação em elemento que não ganha nada com ela.
+- Proibido: fade-in genérico em todas as seções ao rolar.
+- Proibido: "Bem-vindo", "Transforme seu negócio", "Simples assim", "Elevate", e
+- Proibido: emoji como ícone de produto.

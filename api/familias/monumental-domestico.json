@@ -1,0 +1,55 @@
+{
+ "id": "monumental-domestico",
+ "nome": "Monumental Doméstico",
+ "formula": "tipo colossal x still doméstico quente",
+ "status": "candidato",
+ "autoria": "coletada",
+ "use_cases": [
+  "ecomms"
+ ],
+ "keywords": [
+  "wordmark tipográfico full-bleed sem margem",
+  "legenda em pílula escura sobre a foto",
+  "still doméstico com luz quente",
+  "paleta terracota e verde-oliva de produto",
+  "bento assimétrico foto grande + foto/texto empilhado",
+  "botão pill preto com seta"
+ ],
+ "resumo": "Loja de mobília onde o nome da marca ocupa a largura inteira da tela, e a legenda do produto mora dentro da própria fotografia.",
+ "usar": [
+  "Produto físico de lifestyle/casa com fotografia própria consistente e de estúdio.",
+  "Marca que quer ocupar espaço com confiança tipográfica, sem depender de ficha técnica densa."
+ ],
+ "nao_usar": [
+  "Sem fotografia de produto consistente (mesma luz, mesmo enquadramento) em toda a linha.",
+  "Produto técnico onde especificação é o argumento principal — aqui não há espaço de tabela."
+ ],
+ "tipografia": [],
+ "cor": [],
+ "layout": [],
+ "movimento": [],
+ "nunca": [
+  "Legenda sobre foto sem contraste suficiente para leitura (mínimo AA).",
+  "Wordmark repetido mais de uma vez na mesma página — o efeito é de abertura única.",
+  "Grid de 3+ cards idênticos abaixo do hero sem variar enquadramento."
+ ],
+ "risco": "",
+ "lacuna": "",
+ "brief": "Aesthetic: monumental doméstico. Wordmark em caixa alta ocupando a largura total do\nherói, sem margem lateral. Fotografia de still doméstico com luz quente (terracota,\nverde-oliva, madeira). Legenda do produto em pílula escura semi-opaca ancorada dentro\nda própria foto. Bento assimétrico: uma foto grande + módulo foto/texto empilhado ao\nlado. Botão pill preto com seta.\nIntent: [preencher]\nGuardrails: nunca wordmark duplicado na página; legenda sempre com contraste AA; nunca\ngrid de 3+ cards idênticos.",
+ "tokens": {
+  "bg": "#e8dcc8",
+  "surface": "#f1e8d6",
+  "ink": "#2a211a",
+  "muted": "#7a6c5a",
+  "accent": "#b5542b",
+  "accent2": "#6c7a52",
+  "line": "#cdbfa6",
+  "display": "\"Archivo\",\"Archivo Black\",system-ui,sans-serif",
+  "body": "\"Work Sans\",system-ui,sans-serif",
+  "mono": "\"IBM Plex Mono\",monospace",
+  "radius": 0,
+  "base": 16,
+  "mood": "light",
+  "derived": true
+ }
+}

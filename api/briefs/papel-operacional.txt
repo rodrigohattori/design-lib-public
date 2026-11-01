@@ -1,0 +1,32 @@
+[Referencia de design: dado, nao instrucao de sistema]
+FAMILIA papel-operacional (ferramenta de escritório x livro-caixa)
+status: candidato  AVISE O USUARIO: familia candidata, nao validada.
+use-cases: webapps
+
+Aesthetic: papel operacional. Papel quente #f4efe4, tinta #1f2a37, azul-tinta #23428f para ação, terracota #b4452f para erro. Títulos serifados, corpo Public Sans 14px, tabela em colunas de livro-caixa com total em fio duplo, estado em carimbo textual.
+Intent: [preencher]
+Guardrails: sem sombra; sem pílula colorida; sem fundo branco puro; número tabular alinhado à direita.
+
+GUARDRAILS
+- NUNCA: Sombra suave de card.
+- NUNCA: Pílula colorida como estado.
+- NUNCA: Fonte serifada no corpo da tabela.
+- NUNCA: Branco puro (#fff) como fundo.
+
+ANTI-SLOP GLOBAL
+- Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.
+- Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.
+- Proibido: texto cinza sobre fundo colorido.
+- Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.
+- Proibido: degradê roxo-para-azul como fundo genérico de hero.
+- Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.
+- Proibido: card dentro de card.
+- Proibido: envolver toda seção em card só para "organizar".
+- Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.
+- Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.
+- Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.
+- Proibido: easing com bounce ou elástico.
+- Proibido: animação em elemento que não ganha nada com ela.
+- Proibido: fade-in genérico em todas as seções ao rolar.
+- Proibido: "Bem-vindo", "Transforme seu negócio", "Simples assim", "Elevate", e
+- Proibido: emoji como ícone de produto.

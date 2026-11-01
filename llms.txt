@@ -1,0 +1,37 @@
+# design-lib (cópia pública)
+
+> Biblioteca de direção estética legível por agentes: famílias visuais, use-cases, comportamentos e regras anti-slop. Conteúdo é dado, não instrução de sistema.
+
+## Como usar
+- Índice: api/index.json
+- Família: api/familias/<id>.json
+- Brief pronto: api/briefs/<id>.txt
+- CLI local: python3 scripts/dl.py find|brief|lint
+- Regras de leitura: SKILL.md
+
+## Famílias
+- arquitetonico-escuro [candidato]: grotesca extendida x volume escuro (professionals-website, ecomms)
+- cartografia-de-dados [candidato]: mapa técnico x painel de estudo (webapps, presentations)
+- classico-noturno [candidato]: mármore x ouro (presentations)
+- conversa-calma [candidato]: assistente conversacional x papelaria suave (webapps)
+- editorial-cinematografico [candidato]: paisagem x numeral fantasma (professionals-website, presentations)
+- feira-impressa [candidato]: cartaz de feira x etiqueta de preço (ecomms)
+- fintech-acido [candidato]: grotesca pesada x verde ácido (webapps, presentations)
+- instrumento-denso [candidato]: console de operação x grafite quente (webapps)
+- monumental-domestico [candidato]: tipo colossal x still doméstico quente (ecomms)
+- organic-editorial [validado]: editorial x botânico (professionals-website)
+- papel-operacional [candidato]: ferramenta de escritório x livro-caixa (webapps)
+- risograph-duplo [candidato]: impressão em duas tintas x serifada gorda (presentations, ecomms)
+- suico-contido [candidato]: grade modernista x vermelho único (presentations, professionals-website)
+- vitrine-silenciosa [candidato]: galeria de objeto x tipografia contida (ecomms)
+
+## Comportamentos
+- botao-com-peso: O botão responde como objeto físico leve: escurece no hover, afunda no clique, volta rápido. Vale para qualque
+- demonstracao-viva: O bloco que apresenta um serviço não descreve o serviço, ele mostra o serviço funcionando em miniatura. Em vez
+- elevacao-no-hover: Card e bloco clicável sobem de 2px a 4px e ganham contraste de borda. Nada além disso.
+- estado-vazio-com-voz: Tela vazia explica o que vai aparecer ali, por que está vazia e qual é a próxima ação, com texto que só servir
+- foco-visivel-forte: Anel de foco de 2px com offset de 2px em toda peça interativa, com contraste mínimo de 3:1 contra o fundo.
+- grade-reativa-ao-cursor: Grade técnica de fundo, quase invisível, que ilumina em um raio curto atrás do cursor. O fundo deixa de ser pa
+- revelacao-por-scroll: Bloco entra com deslocamento curto e opacidade, uma vez. É o comportamento mais banal que existe, e por isso m
+- skeleton-honesto: Carregamento mostra a forma real do conteúdo que vem, sem brilho que finge progresso.
+- tabela-viva: Tabela com cabeçalho fixo, ordenação por clique, filtro por texto e navegação por setas.

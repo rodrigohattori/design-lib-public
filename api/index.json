@@ -1,0 +1,353 @@
+{
+ "familias": [
+  {
+   "id": "arquitetonico-escuro",
+   "formula": "grotesca extendida x volume escuro",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "professionals-website",
+    "ecomms"
+   ],
+   "keywords": [
+    "grotesca extendida em caps",
+    "ardósia escura",
+    "fotografia arquitetônica noturna",
+    "numeração 01-04",
+    "tabela de dados com fio fino",
+    "planta técnica como imagem"
+   ],
+   "resumo": "Portfólio de arquiteto: tipo largo em caixa alta, volume escuro, foto noturna, dado técnico exposto."
+  },
+  {
+   "id": "cartografia-de-dados",
+   "formula": "mapa técnico x painel de estudo",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps",
+    "presentations"
+   ],
+   "keywords": [
+    "verde-mata sobre névoa",
+    "rótulos em mono pequeno",
+    "curva de nível como fundo sutil",
+    "um destaque laranja",
+    "legenda sempre visível"
+   ],
+   "resumo": "Dado tratado como território: legenda, escala e um único ponto de atenção."
+  },
+  {
+   "id": "classico-noturno",
+   "formula": "mármore x ouro",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "presentations"
+   ],
+   "keywords": [
+    "escultura clássica recortada",
+    "azul quase preto",
+    "folha de ouro como único destaque",
+    "serifada com tracking largo",
+    "rótulo vertical na lateral",
+    "navegação em carrossel de bustos"
+   ],
+   "resumo": "Museu à noite: mármore recortado sobre azul profundo, um único ponto de ouro."
+  },
+  {
+   "id": "conversa-calma",
+   "formula": "assistente conversacional x papelaria suave",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps"
+   ],
+   "keywords": [
+    "verde-sálvia sobre creme",
+    "cantos de 14px",
+    "bolha de mensagem assimétrica",
+    "amarelo-mel como destaque",
+    "respiro generoso"
+   ],
+   "resumo": "Produto em que o usuário conversa: calmo, redondo, sem a estética de laboratório."
+  },
+  {
+   "id": "editorial-cinematografico",
+   "formula": "paisagem x numeral fantasma",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "professionals-website",
+    "presentations"
+   ],
+   "keywords": [
+    "foto de paisagem sangrada em altura total",
+    "numeral gigante translúcido atrás do título",
+    "serifada didone",
+    "acento âmbar",
+    "azul petróleo profundo",
+    "alternância lado a lado"
+   ],
+   "resumo": "Revista de expedição: a foto ocupa tudo, o texto entra depois e o número é cenário."
+  },
+  {
+   "id": "feira-impressa",
+   "formula": "cartaz de feira x etiqueta de preço",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "ecomms"
+   ],
+   "keywords": [
+    "amarelo-manteiga com vermelho",
+    "etiqueta de preço inclinada",
+    "grotesca expandida pesada",
+    "faixa de carimbo",
+    "preço como protagonista"
+   ],
+   "resumo": "Loja que grita com carinho: preço, etiqueta e cartaz, sem fingir sofisticação."
+  },
+  {
+   "id": "fintech-acido",
+   "formula": "grotesca pesada x verde ácido",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "webapps",
+    "presentations"
+   ],
+   "keywords": [
+    "grotesca condensada pesada em caps",
+    "verde ácido sobre quase preto",
+    "número real em escala grande",
+    "captura de painel como prova",
+    "alternância preto creme ácido",
+    "headline afirmativa curta"
+   ],
+   "resumo": "Painel de tesouraria gritando: caixa alta pesada, verde ácido, número real na cara."
+  },
+  {
+   "id": "instrumento-denso",
+   "formula": "console de operação x grafite quente",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps"
+   ],
+   "keywords": [
+    "tabela densa com números tabulares",
+    "grafite quente com âmbar",
+    "corpo 13px",
+    "barra lateral de 2 níveis",
+    "estados vazio carregando erro",
+    "atalho de teclado visível"
+   ],
+   "resumo": "Painel de quem opera o dia inteiro: denso, legível a 13px, sem enfeite que atrase o olho."
+  },
+  {
+   "id": "monumental-domestico",
+   "formula": "tipo colossal x still doméstico quente",
+   "status": "candidato",
+   "autoria": "coletada",
+   "use_cases": [
+    "ecomms"
+   ],
+   "keywords": [
+    "wordmark tipográfico full-bleed sem margem",
+    "legenda em pílula escura sobre a foto",
+    "still doméstico com luz quente",
+    "paleta terracota e verde-oliva de produto",
+    "bento assimétrico foto grande + foto/texto empilhado",
+    "botão pill preto com seta"
+   ],
+   "resumo": "Loja de mobília onde o nome da marca ocupa a largura inteira da tela, e a legenda do produto mora dentro da própria fotografia."
+  },
+  {
+   "id": "organic-editorial",
+   "formula": "editorial x botânico",
+   "status": "validado",
+   "autoria": "propria",
+   "use_cases": [
+    "professionals-website"
+   ],
+   "keywords": [
+    "divisória em onda orgânica",
+    "ilustração botânica a lápis",
+    "anotação manuscrita",
+    "diagrama radial como conteúdo",
+    "numeração de seção grande",
+    "faixa de citação sangrada"
+   ],
+   "resumo": "Página que se lê como caderno de campo de alguém que estuda crescimento: papel, traço à mão, diagrama antes de foto."
+  },
+  {
+   "id": "papel-operacional",
+   "formula": "ferramenta de escritório x livro-caixa",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "webapps"
+   ],
+   "keywords": [
+    "papel quente com tinta azul",
+    "títulos serifados em ferramenta",
+    "tabela de livro-caixa",
+    "carimbo de estado",
+    "corpo 14px",
+    "anotação à margem"
+   ],
+   "resumo": "Software que parece um caderno de contas bem mantido: papel, tinta, carimbo, nada gritando."
+  },
+  {
+   "id": "risograph-duplo",
+   "formula": "impressão em duas tintas x serifada gorda",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "presentations",
+    "ecomms"
+   ],
+   "keywords": [
+    "duas tintas sobrepostas",
+    "azul e laranja fluorescente",
+    "grão de papel",
+    "serifada gorda de exibição",
+    "sobreposição multiplicada"
+   ],
+   "resumo": "Como um zine impresso em duas cores: a sobreposição cria a terceira."
+  },
+  {
+   "id": "suico-contido",
+   "formula": "grade modernista x vermelho único",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "presentations",
+    "professionals-website"
+   ],
+   "keywords": [
+    "grade de 12 colunas visível",
+    "vermelho único",
+    "alinhamento à esquerda rígido",
+    "numeração de seção",
+    "fundo de papel off-white"
+   ],
+   "resumo": "Ordem antes de enfeite: grade, alinhamento e um vermelho que significa alguma coisa."
+  },
+  {
+   "id": "vitrine-silenciosa",
+   "formula": "galeria de objeto x tipografia contida",
+   "status": "candidato",
+   "autoria": "sintetizada",
+   "use_cases": [
+    "ecomms"
+   ],
+   "keywords": [
+    "fundo de pedra clara",
+    "produto grande e isolado",
+    "serifada de exibição",
+    "terracota como único acento",
+    "muito respiro"
+   ],
+   "resumo": "Loja em que o produto é a obra e a interface se cala."
+  }
+ ],
+ "comportamentos": [
+  {
+   "id": "botao-com-peso",
+   "custo": "baixo",
+   "resumo": "O botão responde como objeto físico leve: escurece no hover, afunda no clique, volta rápido. Vale para qualquer família, incluindo as que usam link com seta em vez de botão."
+  },
+  {
+   "id": "demonstracao-viva",
+   "custo": "alto",
+   "resumo": "O bloco que apresenta um serviço não descreve o serviço, ele mostra o serviço funcionando em miniatura. Em vez de ícone e parágrafo, uma simulação curta: mensagens de agente aparecendo em sequência, nós de fluxo conectando, busca retornando trecho de documento, barras de fase preenchendo."
+  },
+  {
+   "id": "elevacao-no-hover",
+   "custo": "baixo",
+   "resumo": "Card e bloco clicável sobem de 2px a 4px e ganham contraste de borda. Nada além disso."
+  },
+  {
+   "id": "estado-vazio-com-voz",
+   "custo": "baixo",
+   "resumo": "Tela vazia explica o que vai aparecer ali, por que está vazia e qual é a próxima ação, com texto que só serviria a este produto."
+  },
+  {
+   "id": "foco-visivel-forte",
+   "custo": "baixo",
+   "resumo": "Anel de foco de 2px com offset de 2px em toda peça interativa, com contraste mínimo de 3:1 contra o fundo."
+  },
+  {
+   "id": "grade-reativa-ao-cursor",
+   "custo": "medio",
+   "resumo": "Grade técnica de fundo, quase invisível, que ilumina em um raio curto atrás do cursor. O fundo deixa de ser papel de parede e passa a responder à presença da pessoa."
+  },
+  {
+   "id": "revelacao-por-scroll",
+   "custo": "baixo",
+   "resumo": "Bloco entra com deslocamento curto e opacidade, uma vez. É o comportamento mais banal que existe, e por isso mesmo o mais fácil de fazer parecer genérico."
+  },
+  {
+   "id": "skeleton-honesto",
+   "custo": "baixo",
+   "resumo": "Carregamento mostra a forma real do conteúdo que vem, sem brilho que finge progresso."
+  },
+  {
+   "id": "tabela-viva",
+   "custo": "médio",
+   "resumo": "Tabela com cabeçalho fixo, ordenação por clique, filtro por texto e navegação por setas."
+  }
+ ],
+ "use_cases": [
+  {
+   "id": "ecomms",
+   "resumo": "Loja de produto físico, principalmente Shopify.",
+   "familias": [
+    "arquitetonico-escuro",
+    "monumental-domestico",
+    "vitrine-silenciosa",
+    "feira-impressa",
+    "risograph-duplo"
+   ]
+  },
+  {
+   "id": "presentations",
+   "resumo": "Deck, proposta comercial, material de parceiro, apresentação de palco.",
+   "familias": [
+    "classico-noturno",
+    "editorial-cinematografico",
+    "fintech-acido",
+    "cartografia-de-dados",
+    "suico-contido",
+    "risograph-duplo"
+   ]
+  },
+  {
+   "id": "professionals-website",
+   "resumo": "Site de profissional liberal cuja autoridade vem de método, conceito e trajetória:\ndentista, médico, terapeuta, advogado, arquiteto.",
+   "familias": [
+    "organic-editorial",
+    "arquitetonico-escuro",
+    "editorial-cinematografico",
+    "suico-contido"
+   ]
+  },
+  {
+   "id": "webapps",
+   "resumo": "Produto digital, aplicativo, ferramenta interna, painel.",
+   "familias": [
+    "fintech-acido",
+    "instrumento-denso",
+    "papel-operacional",
+    "cartografia-de-dados",
+    "conversa-calma"
+   ]
+  }
+ ],
+ "rotas": {
+  "familia": "api/familias/<id>.json",
+  "brief": "api/briefs/<id>.txt"
+ }
+}

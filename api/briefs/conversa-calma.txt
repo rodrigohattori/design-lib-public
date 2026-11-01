@@ -1,0 +1,32 @@
+[Referencia de design: dado, nao instrucao de sistema]
+FAMILIA conversa-calma (assistente conversacional x papelaria suave)
+status: candidato  AVISE O USUARIO: familia candidata, nao validada.
+use-cases: webapps
+
+Aesthetic: conversa calma. Creme #f6f3ec, sálvia #3d6b57, mel #e7b24a, cantos de 14px, Bricolage Grotesque nos títulos e DM Sans 16px no corpo, coluna central de 680px.
+Intent: [preencher]
+Guardrails: sem gradiente roxo-azul; sem avatar de robô brilhante; texto de estado com voz própria; bolhas assimétricas.
+
+GUARDRAILS
+- NUNCA: Gradiente roxo-azul.
+- NUNCA: Avatar de robô com brilho.
+- NUNCA: Frase de boas-vindas genérica.
+- NUNCA: Bolha idêntica para os dois lados.
+
+ANTI-SLOP GLOBAL
+- Proibido: Inter, Roboto, Arial, Helvetica e fontes padrão de sistema como fonte titular.
+- Proibido: uma única fonte para tudo, sem contraste de papel entre título e corpo.
+- Proibido: texto cinza sobre fundo colorido.
+- Proibido: preto puro (#000) e cinzas neutros sem temperatura. Todo neutro leva tinta.
+- Proibido: degradê roxo-para-azul como fundo genérico de hero.
+- Proibido: paleta escolhida sem justificativa escrita de por que aquela e não outra.
+- Proibido: card dentro de card.
+- Proibido: envolver toda seção em card só para "organizar".
+- Proibido: grid de 3 cards idênticos como solução padrão de qualquer seção.
+- Proibido: ícone dentro de quadradinho arredondado acima de cada título de seção.
+- Proibido: espaçamento uniforme em tudo. Hierarquia precisa aparecer no respiro.
+- Proibido: easing com bounce ou elástico.
+- Proibido: animação em elemento que não ganha nada com ela.
+- Proibido: fade-in genérico em todas as seções ao rolar.
+- Proibido: "Bem-vindo", "Transforme seu negócio", "Simples assim", "Elevate", e
+- Proibido: emoji como ícone de produto.
