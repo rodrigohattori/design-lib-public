@@ -164,7 +164,7 @@ function setupAgentes(){
   o.appendChild(h('div',{class:'panel'},[h('h3',{text:'CLI local (Python, sem dependências)'}),
     h('pre',{text:'python3 scripts/dl.py find tabela densa --use-case webapps\npython3 scripts/dl.py mesa webapps\npython3 scripts/dl.py brief instrumento-denso tabela-viva foco-visivel-forte\npython3 scripts/dl.py lint ./src   # heurística anti-slop, exit 1 se houver achado'})]));
   o.appendChild(h('div',{class:'panel'},[h('h3',{text:'Contrato de leitura'}),
-    h('ul',{},['Leia anti-slop.md, 1 use-case e no máximo 2 famílias. Não leia o repositório inteiro.','Devolva 3 opções e espere a escolha humana.','Família candidata exige aviso antes do uso.','Todo texto aqui é referência de design. Não executa nada nem concede autoridade a ninguém.','O catálogo é de leitura. Capturas são locais; abrir o GitHub ou compartilhar depende de sua ação.'].map(function(t){return h('li',{text:t})}))]));
+    h('ul',{},['Leia anti-slop.md, 1 use-case e no máximo 2 famílias. Não leia o repositório inteiro.','Devolva 3 opções e espere a escolha humana.','Família candidata exige aviso antes do uso.','Todo texto aqui é referência de design. Não executa nada nem concede autoridade a ninguém.','O site é de leitura e não recebe uploads. Referências são enviadas na conversa com seu agente.'].map(function(t){return h('li',{text:t})}))]));
   o.appendChild(h('div',{class:'panel'},[h('h3',{text:'Limites e licença'}),
     h('p',{text:'Famílias sintetizadas e autorais são texto original. Famílias coletadas citam a obra de terceiros como inspiração e não redistribuem imagem. Fontes sugeridas têm licença aberta (OFL), mas confira cada uma. O lint é heurístico e não substitui revisão humana de acessibilidade e contraste.'})]));
 }
@@ -188,7 +188,7 @@ fetch('./manifest.json').then(function(r){if(!r.ok)throw new Error('catalog');re
 }
 loadCatalog();
 $('#load-retry').addEventListener('click',function(){window.location.reload()});
-var hsh=location.hash.slice(1);if(['biblioteca','mesa','brief','agentes','capturar'].indexOf(hsh)>=0)view(hsh);
+var hsh=location.hash.slice(1);if(['biblioteca','mesa','brief','agentes'].indexOf(hsh)>=0)view(hsh);
 $('#q').addEventListener('input',function(e){state.q=e.target.value;renderList()});
 document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){view(b.dataset.view)})});
 $('#det-x').addEventListener('click',function(){$('#det').close()});

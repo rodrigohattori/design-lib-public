@@ -15,6 +15,4 @@ jobs:
         run: |
           python3 scripts/test_catalog.py
           python3 scripts/build.py --check
-          node --test scripts/test_capture.js
           node --check app/app.js
-          node --check app/capture.js

@@ -8,5 +8,4 @@ antes da escrita. Não há inspeção semântica capaz de provar que um texto é
 a liberação continua sendo parte da revisão humana.
 
 `test_catalog.py` cria fixtures temporárias para testar confinamento, symlinks,
-atualidade e remoção de saídas antigas. `test_capture.js` usa o test runner do Node
-para validar URLs e rascunhos sem abrir GitHub ou fazer requisições.
+atualidade e remoção de saídas antigas. Os testes não precisam de rede.
