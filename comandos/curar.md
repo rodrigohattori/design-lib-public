@@ -124,9 +124,12 @@ declarada, layout, movimento.
 
 ## Etapa 4 — fechar
 
-Depois da aprovação: escreva o arquivo, converta a imagem para WebP com teto de 300 KB,
-mova para `refs/<familia>/NN-nome.webp`, adicione a linha em `taxonomia.md`, esvazie o
-inbox, rode `bash scripts/publicar.sh "cura: <nome>"`.
+Depois da aprovação: altere a fonte curada e a taxonomia quando necessário. Para
+entrar na cópia pública, a fonte precisa constar em `publicacao.json` e ter liberação
+de conteúdo e direitos conferida. Rode `python3 scripts/build.py` e depois `--check`,
+revise as saídas e prepare um PR. Envio, integração e publicação seguem a autorização
+vigente; uma referência recebida não autoriza nenhuma dessas ações. Nesta cópia não
+há script de publicação nem exportação automática de imagens ou inbox privado.
 
 ## Recusa
 

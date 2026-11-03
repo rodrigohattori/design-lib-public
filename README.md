@@ -6,7 +6,8 @@ Direção estética legível por pessoas e por agentes: famílias visuais com to
 
 ## Ver o app
 
-O app é estático e somente leitura. Sirva a pasta com qualquer servidor local:
+O app é um catálogo estático e de leitura. As referências chegam pela conversa com
+o agente, inclusive prints ou gravações enviados pelo celular. Sirva a pasta localmente:
 
 ```
 python3 -m http.server 8765
@@ -25,6 +26,36 @@ python3 scripts/dl.py lint ./src
 ```
 
 Ou leia os arquivos estáticos: `llms.txt`, `api/index.json`, `api/familias/<id>.json`, `api/briefs/<id>.txt`. Rode `python3 scripts/build.py` depois de editar qualquer markdown.
+
+## Adicionar referências pela conversa
+
+Envie o print ou a gravação na conversa do Codex e peça a incorporação à biblioteca.
+Se possível, indique o detalhe que chamou atenção e o link de origem. O agente verifica
+se o anexo está acessível, compara com o catálogo e identifica o que vale extrair.
+Um print sustenta análise estática; movimento e timing precisam de evidência do vídeo.
+
+A curadoria continua em `comandos/curar.md`. Quando o pedido já determina o ajuste,
+seguir esse escopo; uma mudança de família, taxonomia ou status precisa da decisão
+correspondente. Enviar um anexo para análise não autoriza redistribuir o arquivo.
+A publicação recebe apenas a síntese e os materiais cuja liberação foi conferida.
+O site não tem formulário de captura, token, upload ou inbox no GitHub.
+
+## Atualizar com segurança
+
+`publicacao.json` enumera as fontes de catálogo liberadas para esta cópia pública.
+Adicionar markdown na pasta não o exporta automaticamente. Nunca aponte o gerador
+para o brain ou para uma cópia privada. Os arquivos já presentes neste Git público
+continuam públicos, mesmo quando não entram no catálogo gerado.
+
+O build valida IDs, referências e caminhos, rejeita symlinks e gera um `source_digest`
+reproduzível. Remove saídas antigas somente das pastas de API que administra.
+`python3 scripts/build.py --check` falha quando as saídas estão desatualizadas, sem
+reescrevê-las. Agentes devem registrar a revisão/digest usado e ler índice, use-case
+e famílias selecionadas, sem carregar o manifesto inteiro no contexto.
+
+Verificações locais: `python3 scripts/test_catalog.py`, `node --check app/app.js`
+e `python3 scripts/build.py --check`. O lint não lê alvos sensíveis ou symlinks e falha
+quando não há arquivo de código válido para analisar. Continua sendo uma heurística.
 
 ## Estrutura
 
