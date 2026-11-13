@@ -77,7 +77,7 @@ scripts/               build.py, dl.py (stdlib, sem rede)
 - As fontes do app (`app/fonts`) são todas SIL OFL 1.1, com licença e avisos em `app/fonts/OFL.txt` e `LICENSES.md`. Fontes sugeridas nos briefs também são OFL; confira cada uma ao usar em produto.
 - Famílias `candidato` não foram validadas em produto real.
 - O lint é heurístico e não substitui revisão humana de acessibilidade e contraste.
-- Licença do repositório: a definir pelo autor.
+- Licenças: código sob MIT (`LICENSE`); textos e conteúdo do catálogo sob CC BY 4.0 (`LICENSE-CONTENT.md`); fontes em `app/fonts` mantêm a SIL OFL 1.1. Ao reutilizar, credite "design-lib por Rodrigo Hattori".
 
 ## Precedência
 
